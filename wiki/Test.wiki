@@ -1,0 +1,26 @@
+#summary How to use tint.
+
+= Introduction =
+
+Tint is a simple *panel/taskbar* intentionally made for *openbox3*, but should also work with other window managers.
+
+The following documentation explain how to install, run and configure tint.
+
+
+= Install =
+
+If you want to install tint from source :
+  * tint depend on cairo, pango, glib and imlib2
+  * download the latest source
+  * extract the package '_tar -zxvf tint*gz_'
+  * change directory to src '_cd src_' and build the software with '_make_'
+  * as root type '_make install_'
+
+
+= Execute =
+
+run '_tint_' on the command line.
+tint create a config file '_$HOME/.config/tint/tintrc_'. You can open tintrc and customize it.
+
+= Configure =
+
