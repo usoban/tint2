@@ -22,7 +22,7 @@ tint create a config file in '_$HOME/.config/tint/tintrc_'.
 
 With openbox, you can run tint on startup :
   * open the file '_$HOME/.config/openbox/autostart.sh_'
-  * jump to the end of the file and add '_sleep 1s && tint &_'
+  * jump at the end of the file and add '_sleep 1s && tint &_'
 
 
 = Configure =
