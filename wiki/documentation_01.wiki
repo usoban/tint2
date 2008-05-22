@@ -20,8 +20,9 @@ If you want to install tint from source :
 run '_tint_' on the command line.
 tint create a config file in '_$HOME/.config/tint/tintrc_'.
 
-With openbox, you can add the following line at the end of '_$HOME/.config/openbox/autostart.sh_':
-  * sleep 1s && tint &
+With openbox, you can run tint on startup :
+  * open the file '_$HOME/.config/openbox/autostart.sh_'
+  * add at the end of the file '_sleep 1s && tint &_'
 
 
 = Configure =
