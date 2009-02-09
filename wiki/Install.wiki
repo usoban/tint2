@@ -1,0 +1,33 @@
+#summary How to install tint2
+
+<wiki:toc />
+
+= Introduction =
+
+Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binaries are avaiable.
+
+
+= Install Manually =
+   == Dependencies ==
+   Tint2 depends on cairo, pango, glib, imlib2, xinerama, xrandr.
+   On *Ubuntu*, you install these dependencies using this command :
+   {{{
+   sudo aptitude install libcairo2-dev libpango1.0-dev libglib2.0-dev libimlib2-dev libxinerama-dev libxrandr-dev 
+   }}}
+
+   On *debian*, you install the dependencies using this command:
+   {{{ 
+   apt-get install libcairo2-dev libpango1.0-dev libglib2.0-dev libimlib2-dev libxinerama-dev libxrandr-dev 
+   }}}
+
+
+After these dependencies have been installed, 
+   # You download the latest release and unpack the archive.
+   # You start terminal and navigate to the unpacked archive.
+   # Change directory to the subfolder _src_ and type {{{make}}}
+   # As root, type {{{make install}}} . For Ubuntu users, that means you type {{{sudo make install}}}
+   # If no errors ensure, HURRAY! , tint2 has been installed
+
+= Running tint2 =
+   * Execute {{{tint2}}} to start tint2
+   * Or execute {{{tint2  -c  path_to_config_file}}}
