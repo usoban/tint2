@@ -1,3 +1,4 @@
   * [Welcome ↑ Home]
     * [Install Installing Tint2]
     * [Configure Configuring your tint2rc]
+    * [FAQ Frequently Asked Questions]
