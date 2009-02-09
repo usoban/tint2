@@ -1,4 +1,5 @@
 #summary Welcome to the Tint2 Project
+#labels Featured
 #sidebar TOCArticles
 <wiki:toc />
 
@@ -24,8 +25,7 @@ The tint2 panel also features
 
 = I want it! =
 
-    * Please check [http://code.google.com/p/tint2/downloads/list the download area] for the latest release.
-
+    * [Install Install Tint2]
 = How can I help out? =
 
     * Report bugs and ask questions by visiting the [http://code.google.com/p/tint2/issues/list Tint2 Issue Tracker]. ** Bugs are filed [http://code.google.com/p/tint2/issues/entry here]
