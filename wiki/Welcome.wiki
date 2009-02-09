@@ -1,5 +1,5 @@
 #summary Welcome to the Tint2 Project
-
+#sidebar TOCArticles
 <wiki:toc />
 
 = What is tint2? =
@@ -32,5 +32,3 @@ The tint2 panel also features
 
     * Report bugs and ask questions by visiting the [http://code.google.com/p/tint2/issues/list Tint2 Issue Tracker]. ** Bugs are filed [http://code.google.com/p/tint2/issues/entry here]
     * Contribute to the development by helping fix bugs and adding new features
-
-
