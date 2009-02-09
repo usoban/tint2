@@ -4,8 +4,6 @@
 
 = What is tint2? =
 
-http://www.easysharing.fr/data/images/41978_ecran.jpg
-
 tint2 is a simple panel/taskbar made for modern x window managers. It was specifically made for openbox3 but should also work with other window managers (GNOME, KDE, etc...). It's based on ttm code http://code.google.com/p/ttm/
 
 The goal is to keep a clean and unintrusive look with code lightweight and compliance with freedesktop specifications. 
