@@ -1,5 +1,5 @@
 #summary How to install tint2
-
+#sidebar TOCArticles
 <wiki:toc />
 
 = Introduction =
