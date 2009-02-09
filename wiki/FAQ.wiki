@@ -1,0 +1,27 @@
+#summary Frequently asked questions
+#sidebar TOCArticles
+<wiki:toc />
+
+= What is tint2? =
+  * Tint2 is a panel/taskbar for modern x window managerslike GNOME, KDE, XFCE, openbox, pekwm,etc..
+
+= Who is the developer of tint2? =
+  * The main developer of tint2 is Thierry Lorthiois
+
+= Does tint2 have a system tray/notification area? =
+  * Not at this moment. The main focus of the developers right now is to quash a lot of bugs and make tint2 more stable an faster. When the time is right, they will focus on including a system tray in tint.
+  * There are other standalone system trays that you can use in cnjunction with tint2 like trayer or stalonetray.
+
+= Tint2 doesn't work on compiz correctly? =
+  * All my tasks are on one desktop in compiz?
+    * This happens because compiz has by default only one workspace with 4 view ports.To fix this, Open the Compiz Settings Manager (On Ubuntu _System -> Preferences -> Advanced Desktop Effects Settings_, and then click on _General Options -> Desktop Size tab -> adjust the number of workspaces_, increase the number of workspaces to the number of desktops you want. Tint2 will behave as expected from then.
+  * Tint has ugly white sttreaks/ Tint is being decorated with a window
+    * Open CompizConfig Settings manager -> Window Decorations Plugin   In the box for Decoration windows, put `any & !type=dock`
+
+= Window titles in tint are not updated =
+  * This bug has been fixed in versions newer than tint 0.6
+  * See [Install] to find out how to upgrade to the newer version if tint
+
+= How do I display tasks from all workspaces on the panel? =
+  * In your tint2rc file, change the value of `taskbar_mode` to `multi_desktop`
+  * To show only tasks from current desktop, make the value `single_desktop` 
