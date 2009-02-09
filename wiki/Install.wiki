@@ -30,5 +30,10 @@ After these dependencies have been installed,
    # If no errors ensure, HURRAY! , tint2 has been installed
 
 = Running tint2 =
+== For tint 0.60 ==
+   * Execute {{{tint}}} to start tint2
+   * Or execute {{{tint  -c  path_to_config_file}}}
+
+== For tint 0.6+ ==
    * Execute {{{tint2}}} to start tint2
    * Or execute {{{tint2  -c  path_to_config_file}}}
