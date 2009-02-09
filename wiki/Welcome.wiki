@@ -1,0 +1,36 @@
+#summary Welcome to the Tint2 Project
+
+<wiki:toc />
+
+= What is tint2? =
+
+http://www.easysharing.fr/data/images/41978_ecran.jpg
+
+tint2 is a simple panel/taskbar made for modern x window managers. It was specifically made for openbox3 but should also work with other window managers (GNOME, KDE, etc...). It's based on ttm code http://code.google.com/p/ttm/
+
+The goal is to keep a clean and unintrusive look with code lightweight and compliance with freedesktop specifications. 
+
+= Features =
+
+Tint2 features a taskbar which supports
+
+    * color/transparency on font, icon, border and background
+    * customize mouse event
+    * drag and drop task between desktop and switch desktop 
+
+The tint2 panel also features
+
+    * a clock with font, color and transparency
+    * multi-monitor : panel position adjust to monitor, taskbar by monitor 
+
+
+= I want it! =
+
+    * Please check [http://code.google.com/p/tint2/downloads/list the download area] for the latest release.
+
+= How can I help out? =
+
+    * Report bugs and ask questions by visiting the [http://code.google.com/p/tint2/issues/list Tint2 Issue Tracker]. ** Bugs are filed [http://code.google.com/p/tint2/issues/entry here]
+    * Contribute to the development by helping fix bugs and adding new features
+
+
