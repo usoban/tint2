@@ -2,7 +2,7 @@
 #sidebar TOCArticles
 <wiki:toc />
 
-The first time you run tint2, it will create the config file in `$HOME/.config/tint2/tint2rc`
+The first time you run tint2, it will create the config file in `$HOME/.config/tint2/tint2rc` .   If you upgraded from tint 0.6 , tint2 will convert your tintrc to the new tint2rc and then use it.
 
 You can customize tint2rc or specify another file on the command line with -c option.
 eg. : `tint2 -c $HOME/tint2.conf`
