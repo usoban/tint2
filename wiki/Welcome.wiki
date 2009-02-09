@@ -1,5 +1,4 @@
 #summary Welcome to the Tint2 Project
-#labels Featured
 #sidebar TOCArticles
 <wiki:toc />
 
