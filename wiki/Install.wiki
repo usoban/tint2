@@ -1,4 +1,5 @@
 #summary How to install tint2
+#labels Phase-Deploy
 #sidebar TOCArticles
 <wiki:toc />
 
