@@ -1,0 +1,2 @@
+  * [Welcome ↑ Home]
+    * [Install Installing Tint2]
