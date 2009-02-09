@@ -1,0 +1,211 @@
+#summary Customizing your tint2rc
+#sidebar TOCArticles
+<wiki:toc />
+
+The first time you run tint2, it will create the config file in `$HOME/.config/tint2/tint2rc`
+
+You can customize tint2rc or specify another file on the command line with -c option.
+eg. : `tint2 -c $HOME/tint2.conf`
+
+
+= Background and border =
+
+  tint2rc config file starts with background option.
+        
+  * `rounded = number_of_pixels` : How rounded the borders are
+
+  * `background_color = color opacity`
+    * `opacity = 0` to get background transparency
+        
+  * `border_width = width`
+
+  * `border_color = color opacity`
+    * `opacity = 0` to get border transparency
+
+  tint2 identifies each background with a number (1, 2, ...).
+  Number 0 is reserved for full transparency background.
+
+= Panel =
+  * `panel_monitor = monitor where tint draw the panel`
+    * `the first monitor is 1, use 'all' to get one panel per monitor.`
+    
+  * `panel_position = vertical_position horizontal_position`
+    * `value for vertical_position : bottom, top`
+    * `value for horizontal_position : left, right, center`
+  
+  * `panel_size = width height`
+    * `width = 0 to get full monitor width`
+    
+  * `panel_margin = horizontal_margin vertical_margin`
+    * `horizontal_margin = 0 to get full monitor width`
+    
+  * `panel_padding = horizontal_left_right_padding vertical_padding horizontal_spacing`
+
+  * `font_shadow = boolean (0 or 1)`
+
+  * `panel_background_id = integer` : Which background to use
+
+  http://farm4.static.flickr.com/3438/3266303192_476a188196.jpg
+
+  * Use % to adjust the panel size to monitor size.
+  
+  Example:
+  {{{
+  panel_position = bottom center
+  panel_size = 94% 30
+  panel_margin = 0 0
+  }}}
+ 
+
+  * Use panel_monitor = all to get one panel per monitor (unless it's included into another one)
+  
+  http://farm4.static.flickr.com/3425/3265475271_81e8ed56e0.jpg
+
+= Taskbar, multi-desktop, multi-monitor =
+
+  * `taskbar_mode = single_desktop, multi_desktop or single_monitor`
+    * `taskbar_mode = single_desktop` : tint show one taskbar with task of current desktop
+    * `taskbar_mode = multi_desktop` : tint show one taskbar per virtual desktop
+      * You can drag-and-drop task between desktops`
+      * And click on an empty taskbar to switch desktops`
+    * `taskbar_mode = single_monitor` : tint show one taskbar with task of current monitor
+  
+  * `taskbar_padding = horizontal_left_right_padding vertical_ padding horizontal_spacing`
+
+  * `taskbar_background_id = integer` : Which background to use
+
+  http://farm4.static.flickr.com/3521/3266303292_14d9b6b623.jpg
+
+= Task =
+
+  * `task_icon = boolean (0 or 1)`               : Display task icon or not
+
+  * `task_text = boolean (0 or 1)`               : Display task text or not
+
+  * `task_centered = boolean (0 or 1)`           : Task name centered  or not
+
+  * `task_width = width`                 
+    * `task_width = 0 to get full taskbar width`
+ 
+  * `task_padding = horizontal_ padding vertical_ padding`   
+
+  * `task_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]`              
+
+  * `task_font_color = color opacity`
+                                                       
+  * `task_active_font_color = color opacity`
+
+  * `task_background_id = integer` : Which background to use for non selected tasks
+
+  * `task_active_background_id = integer` : Which background to use when task is selected
+
+  http://farm4.static.flickr.com/3086/3265475337_262799ded3.jpg
+
+= Clock ==
+
+  * `time1_format = %H:%M`
+    * time1_format use 'strftime' syntax
+    * comment time1_format and time2_format to hide clock
+  
+  * `time1_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]`
+
+  * `time2_format = %A %d %B`
+
+  * `time2_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]`
+
+  * `clock_font_color = color opacity`
+
+  * `clock_padding = horizontal_ padding vertical_ padding`
+
+  * `clock_background_id = integer` : Which background to use
+
+= Mouse action =
+
+  Customize mouse action with : `none, close, toggle, iconify, shade, toggle_iconify`
+  
+  Sample format:
+  {{{
+  mouse_middle = none
+  mouse_right = close
+  mouse_scroll_up = toggle
+  mouse_scroll_down = iconify
+  }}}
+
+= An example tint2rc =
+{{{
+#---------------------------------------------
+# TINT2 CONFIG FILE
+#---------------------------------------------
+
+#---------------------------------------------
+# BACKGROUND AND BORDER
+#---------------------------------------------
+rounded = 7
+border_width = 1
+background_color = #000000 60
+border_color = #ffffff 18
+
+rounded = 5
+border_width = 0
+background_color = #ffffff 40
+border_color = #ffffff 50
+
+rounded = 5
+border_width = 0
+background_color = #ffffff 18
+border_color = #ffffff 70
+
+#---------------------------------------------
+# PANEL
+#---------------------------------------------
+panel_monitor = all
+panel_position = bottom center
+panel_size = 90% 28
+panel_margin = 0 0
+panel_padding = 7 0
+font_shadow = 0
+panel_background_id = 1
+
+#---------------------------------------------
+# TASKBAR
+#---------------------------------------------
+taskbar_mode = single_monitor
+taskbar_padding = 2 3 2
+taskbar_background_id = 0
+
+#---------------------------------------------
+# TASKS
+#---------------------------------------------
+task_icon = 1
+task_text = 1
+task_width = 140
+task_centered = 1
+task_padding = 6 3
+task_font = sans 7
+task_font_color = #ffffff 70
+task_active_font_color = #ffffff 85
+task_background_id = 3
+task_active_background_id = 2
+
+
+#---------------------------------------------
+# CLOCK
+#---------------------------------------------
+time1_format = %H:%M
+time1_font = sans 8
+time2_format = %A %d %B
+time2_font = sans 6
+clock_font_color = #ffffff 76
+clock_padding = 4 0
+clock_background_id = 0
+
+#---------------------------------------------
+# MOUSE ACTION ON TASK
+#---------------------------------------------
+mouse_middle = none
+mouse_right = close
+mouse_scroll_up = toggle
+mouse_scroll_down = iconify
+}}}
+
+  Also see [http://tint2.googlecode.com/svn/trunk/doc/tint2-0.7.pdf this file] to explain more about your tint2rc
