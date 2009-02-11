@@ -15,13 +15,26 @@
 = Tint2 doesn't work on compiz correctly? =
   * All my tasks are on one desktop in compiz?
     * This happens because compiz has by default only one workspace with 4 view ports.To fix this, Open the Compiz Settings Manager (On Ubuntu _System -> Preferences -> Advanced Desktop Effects Settings_, and then click on _General Options -> Desktop Size tab -> adjust the number of workspaces_, increase the number of workspaces to the number of desktops you want. Tint2 will behave as expected from then.
-  * Tint has ugly white sttreaks/ Tint is being decorated with a window
+  * Tint is being decorated with a window
     * Open CompizConfig Settings manager -> Window Decorations Plugin   In the box for Decoration windows, put `any & !type=dock`
+  * Tint has ugly white streaks
+    * Set a background for your desktop
 
 = Window titles in tint are not updated =
   * This bug has been fixed in versions newer than tint 0.6
-  * See [Install] to find out how to upgrade to the newer version if tint
+  * See [Install] to find out how to upgrade to the newer version of tint
 
 = How do I display tasks from all workspaces on the panel? =
   * In your tint2rc file, change the value of `taskbar_mode` to `multi_desktop`
   * To show only tasks from current desktop, make the value `single_desktop` 
+
+= I can't maximize any window over tint =
+  * This bug has been fixed in versions newer than tint 0.6
+  * See [Install] to find out how to upgrade to the newer version of tint
+
+= I get errors when I try to compile tint on my own =
+  * Do you have all the dependencies installed? Please check [Install#Dependencies here]
+
+= I upgraded to tint2 and I still have the old panel with its bugs =
+  * The tint binary was renamed tint2 to avoid a conflict with another package.So your new tint2 startup command is *tint2*
+  * Since a new stable release hasn't been released yet, both the old tint and the new tint2 binaries will be on your system when you upgrade just incase you run into some problems and want to fall back on the old binary.
