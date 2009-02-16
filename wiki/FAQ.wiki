@@ -15,10 +15,11 @@
 = Tint2 doesn't work on compiz correctly? =
   * All my tasks are on one desktop in compiz?
     * This happens because compiz has by default only one workspace with 4 view ports.To fix this, Open the Compiz Settings Manager (On Ubuntu _System -> Preferences -> Advanced Desktop Effects Settings_, and then click on _General Options -> Desktop Size tab -> adjust the number of workspaces_, increase the number of workspaces to the number of desktops you want. Tint2 will behave as expected from then.
-  * Tint is being decorated with a window
-    * Open CompizConfig Settings manager -> Window Decorations Plugin   In the box for Decoration windows, put  `any & !type=dock`
-  * Tint has a shadow/is not fully transparent
-    * Open CompizConfig Settings manager -> Window Decorations Plugin   In the box for Shadow windows, put  `any & !type=dock`
+  * Tint is being decorated with a window/ has a shadow /is not fully transparent
+    * Open CompizConfig Settings manager -> Window Decorations Plugin   
+      * In the box for Decoration windows, put  `any & !type=dock`
+      * In the box for Shadow windows, put  `any & !type=dock`  
+   [http://farm4.static.flickr.com/3311/3284967834_51f4d5cd22.jpg]
   * Tint has ugly white streaks
     * Set a background for your desktop
 
