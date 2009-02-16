@@ -62,3 +62,9 @@ After these dependencies have been installed,
    * Execute {{{tint2}}} to start tint2
    * Or execute {{{tint2  -c  path_to_config_file}}}
    * [Configure Configuring your tint2 config file]
+
+
+= Any Problems =
+
+   * If you run into any problems, please check out the [FAQ].
+   * Compiz users should especially check the [http://code.google.com/p/tint2/wiki/FAQ#Tint2_doesn't_work_on_compiz_correctly? Compiz section of the FAQ]
