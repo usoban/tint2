@@ -62,6 +62,12 @@ After these dependencies have been installed,
    * Execute {{{tint2}}} to start tint2
    * Or execute {{{tint2  -c  path_to_config_file}}}
    * [Configure Configuring your tint2 config file]
+  
+  == Autorun tint2 at startup ==
+    * *Openbox3 users* : Add `tint2 &` in Openbox config file `$HOME/.config/openbox/autostart.sh`
+    * *Ubuntu users* : Go to System > Preferences > Sessions . Click on add.
+    http://farm4.static.flickr.com/3043/3287368393_57101eabfa.jpg
+    
 
 
 = Any Problems =
