@@ -1,4 +1,5 @@
 #summary Customizing your tint2rc
+#labels Phase-Deploy
 #sidebar TOCArticles
 <wiki:toc />
 
@@ -26,18 +27,25 @@ eg. : `tint2 -c $HOME/tint2.conf`
   Number 0 is reserved for full transparency background.
 
 = Panel =
-  * `panel_monitor = monitor where tint draw the panel`
-    * `the first monitor is 1, use 'all' to get one panel per monitor.`
+  * `panel_monitor = monitor` Which monitor tint draws the panel on
+    * the first monitor is `1`, use `all` to get one panel per monitor.
     
   * `panel_position = vertical_position horizontal_position`
     * `value for vertical_position : bottom, top`
     * `value for horizontal_position : left, right, center`
   
   * `panel_size = width height`
-    * `width = 0 to get full monitor width`
+    * `width = 0` to get full monitor width
+    * Use `%` to adjust the panel size to monitor size.
     
+      Example:
+      {{{
+      #The panel's width is 94% the size of the monitor
+      panel_size = 94% 30
+      }}}    
+
   * `panel_margin = horizontal_margin vertical_margin`
-    * `horizontal_margin = 0 to get full monitor width`
+    * `horizontal_margin = 0` to get full monitor width
     
   * `panel_padding = horizontal_left_right_padding vertical_padding horizontal_spacing`
 
@@ -46,29 +54,20 @@ eg. : `tint2 -c $HOME/tint2.conf`
   * `panel_background_id = integer` : Which background to use
 
   http://farm4.static.flickr.com/3438/3266303192_476a188196.jpg
-
-  * Use % to adjust the panel size to monitor size.
-  
-  Example:
-  {{{
-  panel_position = bottom center
-  panel_size = 94% 30
-  panel_margin = 0 0
-  }}}
  
 
-  * Use panel_monitor = all to get one panel per monitor (unless it's included into another one)
+  * Use `panel_monitor = all` to get one panel per monitor (unless it's included into another one)
   
   http://farm4.static.flickr.com/3425/3265475271_81e8ed56e0.jpg
 
 = Taskbar, multi-desktop, multi-monitor =
 
   * `taskbar_mode = single_desktop, multi_desktop or single_monitor`
-    * `taskbar_mode = single_desktop` : tint show one taskbar with task of current desktop
-    * `taskbar_mode = multi_desktop` : tint show one taskbar per virtual desktop
+    * `taskbar_mode = single_desktop` : Show one(1) taskbar (current desktop) on all monitors
+    * `taskbar_mode = multi_desktop` : Show one(1) taskbar per desktop on all monitors
       * You can drag-and-drop task between desktops`
-      * And click on an empty taskbar to switch desktops`
-    * `taskbar_mode = single_monitor` : tint show one taskbar with task of current monitor
+      * And also click on an empty taskbar to switch desktops`
+    * `taskbar_mode = single_monitor` : Show one(1) taskbar (The tasks on current monitor)
   
   * `taskbar_padding = horizontal_left_right_padding vertical_ padding horizontal_spacing`
 
