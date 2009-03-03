@@ -21,6 +21,8 @@ The tint2 panel also features
     * a clock with font, color and transparency
     * multi-monitor : panel position adjust to monitor, taskbar by monitor 
 
+Tint2 now also features a system tray/notification area.
+
 
 = I want it! =
 
