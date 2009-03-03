@@ -2,15 +2,35 @@
 #sidebar TOCArticles
 <wiki:toc />
 
+Frequently asked questions. Please add any extra tips to the comments.
+
 = What is tint2? =
-  * Tint2 is a panel/taskbar for modern x window managerslike GNOME, KDE, XFCE, openbox, pekwm,etc..
+  * Tint2 is a panel/taskbar for modern x window managers like GNOME, KDE, XFCE, openbox, pekwm,etc..
 
 = Who is the developer of tint2? =
   * The main developer of tint2 is Thierry Lorthiois
 
 = Does tint2 have a system tray/notification area? =
-  * Not at this moment. The main focus of the developers right now is to quash a lot of bugs and make tint2 more stable an faster. When the time is right, they will focus on including a system tray in tint.
-  * There are other standalone system trays that you can use in cnjunction with tint2 like trayer or stalonetray.
+  * YES! Tint2 finally has system tray/notification area. Please [Install install] the latest build if your current build doesn't have it.
+
+= I have the latest build of tint but still no system tray =
+  * Check your tint2rc to see if you have the systray option configured and the options are not commented out.
+  * The systray section looks like this 
+    {{{
+#---------------------------------------------
+# SYSTRAYBAR
+#---------------------------------------------
+systray_padding = 0 3 3
+systray_background_id = 0
+    }}}
+
+= I want to disable the tint systray =
+  * To disable the systray, just comment out `systray_padding` in your tint2rc
+  * Example:
+    {{{      
+#systray_padding = 0 3 3
+systray_background_id = 0
+     }}}
 
 = Tint2 doesn't work on compiz correctly? =
   * All my tasks are on one desktop in compiz?
