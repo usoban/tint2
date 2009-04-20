@@ -23,8 +23,29 @@ eg. : `tint2 -c $HOME/tint2.conf`
   * `border_color = color opacity`
     * `opacity = 0` to get border transparency
 
+  you are free to put 1, 2, 3... background
+      {{{
+      rounded = 1
+      border_width = 0
+      background_color = #282828 100
+      border_color = #000000 0
+
+      rounded = 1
+      border_width = 0
+      background_color = #f6b655 90
+      border_color = #cccccc 40
+      }}}   
   tint2 identifies each background with a number (1, 2, ...).
-  Number 0 is reserved for full transparency background.
+  then background is applied on objects (panel, taskbar, task, clock, systray) with
+      {{{
+      panel_background_id = 1
+      taskbar_background_id = 0
+      task_background_id = 0
+      task_active_background_id = 2
+      systray_background_id = 0
+      clock_background_id = 0
+      }}}   
+  identifier 0 applied full transparency, identifer 1 applied the first background...  
 
 = Panel =
   * `panel_monitor = monitor` Which monitor tint draws the panel on
