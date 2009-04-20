@@ -13,7 +13,7 @@ Frequently asked questions. Please add any extra tips to the comments.
 = Does tint2 have a system tray/notification area? =
   * YES! Tint2 finally has system tray/notification area. Please [Install install] the latest build if your current build doesn't have it.
 
-= I have the latest build of tint but still no system tray =
+= I have the latest build of tint2 but still no system tray =
   * Check your tint2rc to see if you have the systray option configured and the options are not commented out.
   * The systray section looks like this 
     {{{
@@ -24,7 +24,7 @@ systray_padding = 0 3 3
 systray_background_id = 0
     }}}
 
-= I want to disable the tint systray =
+= I want to disable the tint2 systray =
   * To disable the systray, just comment out `systray_padding` in your tint2rc
   * Example:
     {{{      
@@ -43,7 +43,7 @@ systray_background_id = 0
   * Tint has ugly white streaks
     * Set a background for your desktop
 
-= Window titles in tint are not updated =
+= Window titles in tint2 are not updated =
   * This bug has been fixed in versions newer than tint 0.6
   * See [Install] to find out how to upgrade to the newer version of tint
 
@@ -51,11 +51,14 @@ systray_background_id = 0
   * In your tint2rc file, change the value of `taskbar_mode` to `multi_desktop`
   * To show only tasks from current desktop, make the value `single_desktop` 
 
-= I can't maximize any window over tint =
+= I want to hide some tasks from the panel ? =
+  * In Openbox config file 'rc.xml' you can assign the propertie 'skip_taskbar' to your window
+
+= I can't maximize any window over tint2 =
   * This bug has been fixed in versions newer than tint 0.6
   * See [Install] to find out how to upgrade to the newer version of tint
 
-= I get errors when I try to compile tint on my own =
+= I get errors when I try to compile tint2 on my own =
   * Do you have all the dependencies installed? Please check [Install#Dependencies here]
 
 = I upgraded to tint2 and I still have the old panel with its bugs =
