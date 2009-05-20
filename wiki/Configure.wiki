@@ -147,6 +147,25 @@ eg. : `tint2 -c $HOME/tint2.conf`
 
   * `clock_background_id = integer` : Which background to use
 
+= Battery =
+
+  * `battery = boolean (0 or 1)`               : Display battery applet or not
+
+  * `battery_low_status = integer`: At what battery percent does the icon show battery low
+
+  * `battery_low_cmd = notify-send "battery low"` :What to do when battery is low
+
+  * `bat1_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]`
+
+  * `bat2_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]`
+
+  * `battery_font_color = color opacity`
+
+  * `battery_padding = horizontal_ padding vertical_ padding`
+
+  * `battery_background_id = integer` : Which background to use
+
+
 = Mouse action =
 
   Customize mouse action with : `none, close, toggle, iconify, shade, toggle_iconify`
@@ -231,6 +250,18 @@ time2_font = sans 6
 clock_font_color = #ffffff 76
 clock_padding = 1 0
 clock_background_id = 0
+
+#---------------------------------------------
+# BATTERY
+#---------------------------------------------
+battery = 0
+battery_low_status = 7
+battery_low_cmd = notify-send "battery low"
+bat1_font = sans 8
+bat2_font = sans 6
+battery_font_color = #ffffff 76
+battery_padding = 1 0
+battery_background_id = 0
 
 #---------------------------------------------
 # MOUSE ACTION ON TASK
