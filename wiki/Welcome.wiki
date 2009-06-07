@@ -10,18 +10,13 @@ The goal is to keep a clean and unintrusive look with code lightweight and compl
 
 = Features =
 
-Tint2 features a taskbar which supports
+ * panel with taskbar, systray and clock
+ * easy to customize : color/transparency on font, icon, border and background
+ * pager like capability : send task from one workspace to another, switch workspace
+ * multi-monitor capability : one panel per monitor, show task from current monitor
+ * customize mouse event
+ * window manager's menu
 
-    * color/transparency on font, icon, border and background
-    * customize mouse event
-    * drag and drop task between desktop and switch desktop 
-
-The tint2 panel also features
-
-    * a clock with font, color and transparency
-    * multi-monitor : panel position adjust to monitor, taskbar by monitor 
-
-Tint2 now also features a system tray/notification area.
 
 
 = I want it! =
