@@ -11,29 +11,29 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
 = Install Manually =
    == Dependencies ==
    Tint2 depends on *cairo*, *pango*, *glib2*, *imlib2*, *xinerama* and *libx11*.
-   On *Ubuntu*, you install these dependencies using this command :
+   On *Ubuntu*, use this command :
    {{{
    sudo aptitude install libcairo2-dev libpango1.0-dev libglib2.0-dev libimlib2-dev libxinerama-dev libx11-dev
    }}}
 
-   On *debian*, you install the dependencies using this command:
+   On *debian*, use this command:
    {{{ 
    apt-get install libcairo2-dev libpango1.0-dev libglib2.0-dev libimlib2-dev libxinerama-dev libx11-dev
    }}}
 
-   On *gentoo*, you install the dependencies using this command:
+   On *gentoo*, use this command:
    {{{ 
    emerge -av cairo pango glib:2 imlib2 libXinerama libX11
    }}}
 
-After these dependencies have been installed, you download the latest release and unpack the archive.
+   After these dependencies have been installed, you download the latest release and unpack the archive.
    == Getting the sources ==
    {{{
    wget 'http://tint2.googlecode.com/files/tint2-<LATEST-RELEASE>.tar.gz'
    tar xvf tint2-<LATEST-RELEASE>.tar.gz
    }}}
 
-You start terminal in tint2 directory.
+   You start terminal in tint2 directory.
    == Building ==
    {{{
    cd tint2-<LATEST-RELEASE>
