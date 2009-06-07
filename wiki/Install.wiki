@@ -56,6 +56,11 @@ After these dependencies have been installed,
     sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com C4412AEB3B1D5F58E8149B7DD9DAAF25C26CCF8E
     }}}
 
+= Installing tint2 on Gentoo =
+    Simply run:
+    {{{
+    emerge -av tint2
+    }}}
 
 = Running tint2 =
 
