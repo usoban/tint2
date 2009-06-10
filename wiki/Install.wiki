@@ -56,12 +56,12 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
 
    If no errors ensure, HURRAY! , tint2 has been installed
 
-= Tint2 Pre-Built binaries(for Ubuntu and Debian) =
-  Tint2 .deb files are built and can be found [https://launchpad.net/~killeroid/+archive/ppa here].
-  
+= Tint2 Pre-Built binaries =
   Please note that, for now, since tint2 is still under development, there might be a few bugs.
   
   == For Ubuntu 8.10 (Intrepid) ==
+    Tint2 .deb files are built and can be found [https://launchpad.net/~killeroid/+archive/ppa here].
+  
     Add these to your sources.list 
     {{{
     deb http://ppa.launchpad.net/killeroid/ppa/ubuntu intrepid main
@@ -83,7 +83,7 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
     sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com C4412AEB3B1D5F58E8149B7DD9DAAF25C26CCF8E
     }}}
 
-= Installing tint2 on Gentoo =
+  == For Gentoo ==
     Simply run:
     {{{
     emerge -av tint2
