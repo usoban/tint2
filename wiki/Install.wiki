@@ -61,7 +61,6 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
   
   == For Ubuntu 8.10 (Intrepid) ==
     Tint2 .deb files are built and can be found [https://launchpad.net/~killeroid/+archive/ppa here].
-  
     Add these to your sources.list 
     {{{
     deb http://ppa.launchpad.net/killeroid/ppa/ubuntu intrepid main
