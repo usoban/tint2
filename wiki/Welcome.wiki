@@ -6,9 +6,8 @@
 
 tint2 is a simple _*panel/taskbar*_ made for modern x window managers. It was specifically made for _*openbox3*_ but should also work with other window managers (GNOME, KDE, etc...). It's based on ttm code http://code.google.com/p/ttm/
 
-The goal is to keep a clean and unintrusive look with code lightweight and compliance with freedesktop specifications. 
 
-= Features =
+= Features and goals =
 
  * panel with taskbar, systray and clock
  * easy to customize : color/transparency on font, icon, border and background
@@ -17,6 +16,7 @@ The goal is to keep a clean and unintrusive look with code lightweight and compl
  * customize mouse event
  * window manager's menu
 
+The goal is to keep tint2 unintrusive and light (memory / cpu / aestetic). We follow freedesktop specifications. We also try to get 'virtual desktop' and 'multi-monitor' easier to use. 
 
 
 = I want it! =
