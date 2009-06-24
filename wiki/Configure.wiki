@@ -84,7 +84,7 @@ eg. : `tint2 -c $HOME/tint2.conf`
   
   http://farm4.static.flickr.com/3425/3265475271_81e8ed56e0.jpg
 
-= Taskbar, multi-desktop, multi-monitor =
+= Taskbar (multi-desktop) =
 
   * `taskbar_mode = single_desktop or multi_desktop`
     * `taskbar_mode = single_desktop` : Show one(1) taskbar (current desktop)
