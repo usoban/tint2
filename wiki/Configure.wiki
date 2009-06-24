@@ -35,8 +35,8 @@ eg. : `tint2 -c $HOME/tint2.conf`
       background_color = #f6b655 90
       border_color = #cccccc 40
       }}}   
-  tint2 identifies each background with a number (1, 2, ...).
-  then background is applied on objects (panel, taskbar, task, clock, systray) with
+  tint2 automatically identifies each background with a number (1, 2, ...).
+  then you can applied background on objects (panel, taskbar, task, clock, systray) with
       {{{
       panel_background_id = 1
       taskbar_background_id = 0
@@ -48,12 +48,13 @@ eg. : `tint2 -c $HOME/tint2.conf`
   identifier 0 applied full transparency, identifer 1 applied the first background...  
 
 = Panel =
-  * `panel_monitor = monitor` Which monitor tint draws the panel on
+  * `panel_monitor = monitor` Which monitor tint2 draws the panel on
     * the first monitor is `1`, use `all` to get one panel per monitor.
     
-  * `panel_position = vertical_position horizontal_position`
-    * `value for vertical_position : bottom, top`
+  * `panel_position = vertical_position horizontal_position orientation`
+    * `value for vertical_position : bottom, top, center`
     * `value for horizontal_position : left, right, center`
+    * `value for orientation : horizontal, vertical`
   
   * `panel_size = width height`
     * `width = 0` to get full monitor width
@@ -74,6 +75,8 @@ eg. : `tint2 -c $HOME/tint2.conf`
 
   * `panel_background_id = integer` : Which background to use
 
+  * `wm_menu = boolean (0 or 1)`               : Display window manager menu in panel padding
+
   http://farm4.static.flickr.com/3438/3266303192_476a188196.jpg
  
 
@@ -83,12 +86,11 @@ eg. : `tint2 -c $HOME/tint2.conf`
 
 = Taskbar, multi-desktop, multi-monitor =
 
-  * `taskbar_mode = single_desktop, multi_desktop or single_monitor`
-    * `taskbar_mode = single_desktop` : Show one(1) taskbar (current desktop) on all monitors
-    * `taskbar_mode = multi_desktop` : Show one(1) taskbar per desktop on all monitors
+  * `taskbar_mode = single_desktop or multi_desktop`
+    * `taskbar_mode = single_desktop` : Show one(1) taskbar (current desktop)
+    * `taskbar_mode = multi_desktop` : Show one(1) taskbar per desktop
       * You can drag-and-drop task between desktops`
       * And also click on an empty taskbar to switch desktops`
-    * `taskbar_mode = single_monitor` : Show one(1) taskbar (The tasks on current monitor)
   
   * `taskbar_padding = horizontal_left_right_padding vertical_ padding horizontal_spacing`
 
@@ -146,6 +148,10 @@ eg. : `tint2 -c $HOME/tint2.conf`
   * `clock_padding = horizontal_ padding vertical_ padding`
 
   * `clock_background_id = integer` : Which background to use
+
+  * `clock_lclick_command = text` : Which command to execute on left click
+
+  * `clock_rclick_command = text` : Which command to execute on right click
 
 = Battery =
 
@@ -206,17 +212,18 @@ border_color = #ffffff 70
 # PANEL
 #---------------------------------------------
 panel_monitor = all
-panel_position = bottom center
+panel_position = bottom center horizontal
 panel_size = 90% 28
 panel_margin = 0 0
 panel_padding = 7 0
 font_shadow = 0
 panel_background_id = 1
+wm_menu = 0
 
 #---------------------------------------------
 # TASKBAR
 #---------------------------------------------
-taskbar_mode = single_monitor
+taskbar_mode = single_desktop
 taskbar_padding = 2 3 2
 taskbar_background_id = 0
 
@@ -250,6 +257,8 @@ time2_font = sans 6
 clock_font_color = #ffffff 76
 clock_padding = 1 0
 clock_background_id = 0
+clock_lclick_command = xclock
+clock_rclick_command = orage
 
 #---------------------------------------------
 # BATTERY
@@ -271,5 +280,3 @@ mouse_right = close
 mouse_scroll_up = toggle
 mouse_scroll_down = iconify
 }}}
-
-  Also see [http://tint2.googlecode.com/svn/trunk/doc/tint2-0.7.pdf this file] to explain more about your tint2rc
