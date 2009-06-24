@@ -3,7 +3,7 @@
 #sidebar TOCArticles
 <wiki:toc />
 
-The first time you run tint2, it will create the config file in `$HOME/.config/tint2/tint2rc` .   If you upgraded from tint 0.6 , no worries, tint2 is backward compatible with the old tintrc
+The first time you run tint2, it will create the config file in `$HOME/.config/tint2/tint2rc` .   If you upgraded from tint 0.6 , no worries, tint2 is backward compatible with the old config file.
 
 You can customize tint2rc or specify another file on the command line with -c option.
 eg. : `tint2 -c $HOME/tint2.conf`
@@ -129,7 +129,7 @@ eg. : `tint2 -c $HOME/tint2.conf`
 
   * `systray_background_id = integer` : Which background to use for non selected tasks
 
-  To disable the tint system tray, comment out `systray padding`
+  To disable the tint2 system tray, comment out `systray padding`
 
 = Clock ==
 
