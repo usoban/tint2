@@ -106,8 +106,9 @@ eg. : `tint2 -c $HOME/tint2.conf`
 
   * `task_centered = boolean (0 or 1)`           : Task name centered  or not
 
-  * `task_width = width`                 
-    * `task_width = 0 to get full taskbar width`
+  * `task_maximum_size = width height`                 
+    * `width is used with horizontal panel. width = 0 to get full taskbar width`
+    * `height is used with vertical panel`
  
   * `task_padding = horizontal_ padding vertical_ padding`   
 
