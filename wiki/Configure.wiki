@@ -49,7 +49,11 @@ eg. : `tint2 -c $HOME/tint2.conf`
 
 = Panel =
   * `panel_monitor = monitor` Which monitor tint2 draws the panel on
-    * the first monitor is `1`, use `all` to get one panel per monitor.
+    * the first monitor is `1`
+    * use `panel_monitor = all` to get one panel per monitor (unless it's included into another one)
+  
+  http://farm4.static.flickr.com/3425/3265475271_81e8ed56e0.jpg
+
     
   * `panel_position = vertical_position horizontal_position orientation`
     * `value for vertical_position : bottom, top, center`
@@ -80,9 +84,6 @@ eg. : `tint2 -c $HOME/tint2.conf`
   http://farm4.static.flickr.com/3438/3266303192_476a188196.jpg
  
 
-  * Use `panel_monitor = all` to get one panel per monitor (unless it's included into another one)
-  
-  http://farm4.static.flickr.com/3425/3265475271_81e8ed56e0.jpg
 
 = Taskbar (multi-desktop) =
 
