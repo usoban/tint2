@@ -72,6 +72,8 @@ eg. : `tint2 -c $HOME/tint2.conf`
 
   * `panel_margin = horizontal_margin vertical_margin`
     * `horizontal_margin = 0` to get full monitor width
+
+  http://farm4.static.flickr.com/3438/3266303192_476a188196.jpg
     
   * `panel_padding = horizontal_left_right_padding vertical_padding horizontal_spacing`
 
@@ -80,8 +82,6 @@ eg. : `tint2 -c $HOME/tint2.conf`
   * `panel_background_id = integer` : Which background to use
 
   * `wm_menu = boolean (0 or 1)`               : Display window manager menu in panel padding
-
-  http://farm4.static.flickr.com/3438/3266303192_476a188196.jpg
  
 
 
