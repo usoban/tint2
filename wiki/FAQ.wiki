@@ -58,6 +58,14 @@ systray_background_id = 0
   * This bug has been fixed in versions newer than tint 0.6
   * See [Install] to find out how to upgrade to the newer version of tint
 
+= How to maximize window over tint2 in Openbox =
+  * Add a key mapping in openbox's config file ~/.config/openbox/rc.xml
+    {{{      
+    <keybind key="W-p">
+      <action name="ToggleFullscreen"/>
+    </keybind>
+     }}}
+
 = I get errors when I try to compile tint2 on my own =
   * Do you have all the dependencies installed? Please check [Install#Dependencies here]
 
