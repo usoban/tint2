@@ -137,7 +137,7 @@ eg. : `tint2 -c $HOME/tint2.conf`
 
   * `time1_format = %H:%M`
     * time1_format and time2_format use 'strftime' syntax
-      more info on parameters on http://www.manpagez.com/man/3/strftime/
+more info on parameters on http://www.manpagez.com/man/3/strftime/
     * comment time1_format and time2_format to hide clock
   
   * `time1_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]`
