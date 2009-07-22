@@ -73,5 +73,15 @@ systray_background_id = 0
   * The tint binary was renamed tint2 to avoid a conflict with another package.So your new tint2 startup command is *tint2*
   * Since a new stable release hasn't been released yet, both the old tint and the new tint2 binaries will be on your system when you upgrade just incase you run into some problems and want to fall back on the old binary.
 
+= Tint2 don't show in Pekwm =
+  * Setting the margin to one pixel made it appear on my screen. With horizontal panel:
+    {{{      
+panel_margin = 0 1
+     }}}
+With vertical panel:
+    {{{      
+panel_margin = 1 0
+     }}}
+
 = Is there an IRC channel? =
   * Yes. There is now an irc channel, #tint2 on [irc://irc.freenode.net freenode.net].
