@@ -78,7 +78,7 @@ systray_background_id = 0
     {{{      
 panel_margin = 0 1
      }}}
-With vertical panel:
+  * With vertical panel:
     {{{      
 panel_margin = 1 0
      }}}
