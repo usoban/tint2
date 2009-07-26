@@ -47,6 +47,9 @@ systray_background_id = 0
   * This bug has been fixed in versions newer than tint 0.6
   * See [Install] to find out how to upgrade to the newer version of tint
 
+= Task list is limited =
+  * In your tint2rc file check the value of `taskbar_mode`. if it's `multi_desktop`, tint2 show one taskbar per desktop. Change the value to 'single_desktop' if you want just one taskbar.
+
 = How do I display tasks from all workspaces on the panel? =
   * In your tint2rc file, change the value of `taskbar_mode` to `multi_desktop`
   * To show only tasks from current desktop, make the value `single_desktop` 
