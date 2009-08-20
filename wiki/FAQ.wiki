@@ -43,6 +43,9 @@ systray_background_id = 0
   * Tint has ugly white streaks
     * Set a background for your desktop
 
+= I want to disable compiz shadow on Tint2 =
+  * Run ccsm the compiz configuration tool. Go to Window Decorations. For both decoration and shadow windows, replace 'any' with 'any & !name=tint2'.
+
 = Window titles in tint2 are not updated =
   * This bug has been fixed in versions newer than tint 0.6
   * See [Install] to find out how to upgrade to the newer version of tint
