@@ -82,6 +82,8 @@ eg. : `tint2 -c $HOME/tint2.conf`
   * `panel_background_id = integer` : Which background to use
 
   * `wm_menu = boolean (0 or 1)`               : Display window manager menu in panel padding
+
+  * `panel_dock = boolean (0 or 1)`            : Put tint2 into the window managers dock
  
 
 
