@@ -123,9 +123,9 @@ eg. : `tint2 -c $HOME/tint2.conf`
                                                        
   * `task_active_font_color = color opacity`
 
-  * `task_icon_hsb = hue saturation brightness SVN ONLY' : adjust icon's task color 
+  * `task_icon_hsb = hue saturation brightness SVN ONLY` : adjust icon's color for task
 
-  * `task_active_icon_hsb = hue saturation brightness SVN ONLY' : adjust icon's task color 
+  * `task_active_icon_hsb = hue saturation brightness SVN ONLY` : adjust icon's color for active task
 
   * `task_background_id = integer` : Which background to use for non selected tasks
 
