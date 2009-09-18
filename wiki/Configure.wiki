@@ -83,7 +83,7 @@ eg. : `tint2 -c $HOME/tint2.conf`
 
   * `wm_menu = boolean (0 or 1)`               : Display window manager menu in panel padding
 
-  * `panel_dock = boolean (0 or 1)`            : Put tint2 into the window managers dock
+  * `panel_dock = boolean (0 or 1) svn only`            : Put tint2 into the window managers dock. For the openbox window manager I can advise to use also a modifier for the moveButton option, otherwise the mouse click is not forwarded to tint2 (in ~/.config/openbox/rc.xml).
  
 
 
