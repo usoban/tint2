@@ -8,6 +8,8 @@ The first time you run tint2, it will create the config file in `$HOME/.config/t
 You can customize tint2rc or specify another file on the command line with -c option.
 eg. : `tint2 -c $HOME/tint2.conf`
 
+Configuration marked as `SVN ONLY` are not yet supported and could change in the next stable release.
+
 
 = Background and border =
 
@@ -162,6 +164,22 @@ eg. : `tint2 -c $HOME/tint2.conf`
   * `clock_lclick_command = text` : Which command to execute on left click
 
   * `clock_rclick_command = text` : Which command to execute on right click
+
+= Tooltip =
+
+  * `tooltip = boolean (0 or 1) SVN ONLY`               : Display tooltip on task
+
+  * `tooltip_padding = horizontal_padding vertical_padding SVN ONLY`
+
+  * `tooltip_show_timeout = float SVN ONLY` : delay to show tooltip
+
+  * `tooltip_hide_timeout = float SVN ONLY` : delay to close tooltip
+
+  * `tooltip_background_id = integer SVN ONLY` : Which background to use
+
+  * `tooltip_font_color = color opacity SVN ONLY`
+
+  * `tooltip_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE] SVN ONLY`
 
 = Battery =
 
