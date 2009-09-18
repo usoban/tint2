@@ -83,7 +83,7 @@ eg. : `tint2 -c $HOME/tint2.conf`
 
   * `wm_menu = boolean (0 or 1)`               : Display window manager menu in panel padding
 
-  * `panel_dock = boolean (0 or 1) svn only`            : Put tint2 into the window managers dock. For the openbox window manager I can advise to use also a modifier for the moveButton option, otherwise the mouse click is not forwarded to tint2 (in ~/.config/openbox/rc.xml).
+  * `panel_dock = boolean (0 or 1) SVN ONLY`            : Put tint2 into the window managers dock. For the openbox window manager I can advise to use also a modifier for the moveButton option, otherwise the mouse click is not forwarded to tint2 (in ~/.config/openbox/rc.xml).
  
 
 
@@ -98,6 +98,8 @@ eg. : `tint2 -c $HOME/tint2.conf`
   * `taskbar_padding = horizontal_left_right_padding vertical_padding horizontal_spacing`
 
   * `taskbar_background_id = integer` : Which background to use
+
+  * `taskbar_active_background_id = integer SVN ONLY` : Which background to use for current desktop.
 
   http://farm4.static.flickr.com/3521/3266303292_14d9b6b623.jpg
 
@@ -120,6 +122,10 @@ eg. : `tint2 -c $HOME/tint2.conf`
   * `task_font_color = color opacity`
                                                        
   * `task_active_font_color = color opacity`
+
+  * `task_icon_hsb = hue saturation brightness SVN ONLY' : adjust icon's task color 
+
+  * `task_active_icon_hsb = hue saturation brightness SVN ONLY' : adjust icon's task color 
 
   * `task_background_id = integer` : Which background to use for non selected tasks
 
