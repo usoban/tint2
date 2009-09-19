@@ -125,9 +125,9 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
                                                        
   * `task_active_font_color = color opacity`
 
-  * `task_icon_hsb = hue saturation brightness SVN ONLY` : adjust icon's color for task
+  * `task_icon_asb = alpha saturation brightness SVN ONLY` : adjust icon's color for task. alpha [0 to 100], saturation [-100 to 100], brightness [-100 to 100].
 
-  * `task_active_icon_hsb = hue saturation brightness SVN ONLY` : adjust icon's color for active task
+  * `task_active_icon_asb = alpha saturation brightness SVN ONLY` : adjust icon's color for active task
 
   * `task_background_id = integer` : Which background to use for non selected tasks
 
