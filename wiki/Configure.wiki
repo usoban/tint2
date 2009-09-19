@@ -22,7 +22,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
         
   * `border_width = width`
 
-  * `border_color = color opacity`
+  * `border_color = color opacity (0 to 100)`
     * `opacity = 0` to get border transparency
 
   you are free to put 1, 2, 3... background
@@ -50,7 +50,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
   identifier 0 applied full transparency, identifer 1 applied the first background...  
 
 = Panel =
-  * `panel_monitor = monitor` Which monitor tint2 draws the panel on
+  * `panel_monitor = monitor (all, 1, 2, ...)` Which monitor tint2 draws the panel on
     * the first monitor is `1`
     * use `panel_monitor = all` to get one panel per monitor (unless it's included into another one)
   
@@ -121,13 +121,13 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `task_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]`              
 
-  * `task_font_color = color opacity`
+  * `task_font_color = color opacity (0 to 100)`
                                                        
-  * `task_active_font_color = color opacity`
+  * `task_active_font_color = color opacity (0 to 100)`
 
-  * `task_icon_asb = alpha saturation brightness SVN ONLY` : adjust icon's color for task. alpha [0 to 100], saturation [-100 to 100], brightness [-100 to 100].
+  * `task_icon_asb = alpha (0 to 100) saturation (-100 to 100) brightness (-100 to 100) SVN ONLY` : adjust icon's color and transparency for task.
 
-  * `task_active_icon_asb = alpha saturation brightness SVN ONLY` : adjust icon's color for active task
+  * `task_active_icon_asb = alpha (0 to 100) saturation (-100 to 100) brightness (-100 to 100) SVN ONLY` : adjust icon's color and transparency for active task
 
   * `task_background_id = integer` : Which background to use for non selected tasks
 
@@ -155,7 +155,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `time2_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]`
 
-  * `clock_font_color = color opacity`
+  * `clock_font_color = color opacity (0 to 100)`
 
   * `clock_padding = horizontal_padding vertical_padding`
 
@@ -171,13 +171,13 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `tooltip_padding = horizontal_padding vertical_padding SVN ONLY`
 
-  * `tooltip_show_timeout = float SVN ONLY` : delay to show tooltip
+  * `tooltip_show_timeout = float SVN ONLY` : delay to show tooltip in second
 
-  * `tooltip_hide_timeout = float SVN ONLY` : delay to close tooltip
+  * `tooltip_hide_timeout = float SVN ONLY` : delay to close tooltip in second
 
   * `tooltip_background_id = integer SVN ONLY` : Which background to use
 
-  * `tooltip_font_color = color opacity SVN ONLY`
+  * `tooltip_font_color = color opacity  (0 to 100) SVN ONLY`
 
   * `tooltip_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE] SVN ONLY`
 
@@ -193,7 +193,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `bat2_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]`
 
-  * `battery_font_color = color opacity`
+  * `battery_font_color = color opacity  (0 to 100)`
 
   * `battery_padding = horizontal_padding vertical_padding`
 
