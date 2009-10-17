@@ -85,7 +85,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `wm_menu = boolean (0 or 1)`               : Display window manager menu in panel padding
 
-  * `panel_dock = boolean (0 or 1) SVN ONLY`            : Put tint2 into the window managers dock. For the openbox window manager I can advise to use also a modifier for the moveButton option, otherwise the mouse click is not forwarded to tint2 (in ~/.config/openbox/rc.xml).
+  * `panel_dock = boolean (0 or 1) SVN ONLY`            : Put tint2 into the window managers dock. For the openbox window manager I can advise to use also a modifier for the moveButton option, otherwise the mouse click is not forwarded to tint2 (in ~/.config/openbox/rc.xml). The drag'n'drop functionality will not work if tint2 is put into the dock.
  
 
 
