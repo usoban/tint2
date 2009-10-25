@@ -90,4 +90,4 @@ panel_margin = 1 0
      }}}
 
 = Is there an IRC channel? =
-  * Yes. There is now an irc channel, #tint2 on [irc://irc.freenode.net freenode.net].
+  * Yes. There is now an irc channel, *#tint2* on [irc://irc.freenode.net irc.freenode.net].
