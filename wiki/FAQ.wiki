@@ -53,9 +53,8 @@ systray_background_id = 0
 = Task list is limited =
   * In your tint2rc file check the value of `taskbar_mode`. if it's `multi_desktop`, tint2 show one taskbar per desktop. Change the value to `single_desktop` if you want just one taskbar.
 
-= How do I display tasks from all workspaces on the panel? =
-  * In your tint2rc file, change the value of `taskbar_mode` to `multi_desktop`
-  * To show only tasks from current desktop, make the value `single_desktop` 
+= How can I get 'pager like capability' ? =
+  * In your tint2rc file, change the value of `taskbar_mode` to `multi_desktop`. This option will show one taskbar per desktop. So you can detect on witch desktop is an application and witch desktop is empty (or full). You can close an application whithout switching to the desktop. You can drag n drop application between desktop.  
 
 = I want to hide some tasks from the panel ? =
   * In Openbox config file 'rc.xml' you can assign the propertie 'skip_taskbar' to your window
