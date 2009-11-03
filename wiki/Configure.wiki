@@ -83,7 +83,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `panel_background_id = integer` : Which background to use
 
-  * `wm_menu = boolean (0 or 1)`               : Display window manager menu in panel padding
+  * `wm_menu = boolean (0 or 1)`               : Display WM menu when right clic in an empty place of the panel
 
   * `panel_dock = boolean (0 or 1) SVN ONLY`            : Put tint2 into the window managers dock. For the openbox window manager I can advise to use also a modifier for the moveButton option, otherwise the mouse click is not forwarded to tint2 (in ~/.config/openbox/rc.xml). The drag'n'drop functionality will not work if tint2 is put into the dock.
  
@@ -93,7 +93,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `taskbar_mode = single_desktop or multi_desktop`
     * `taskbar_mode = single_desktop` : Show one(1) taskbar (current desktop)
-    * `taskbar_mode = multi_desktop` : Show one(1) taskbar per desktop
+    * `taskbar_mode = multi_desktop` : Pager like capability. Show one(1) taskbar per desktop
       * You can drag-and-drop task between desktops`
       * And also click on an empty taskbar to switch desktops`
   
@@ -137,6 +137,8 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
 = System Tray ==
 
+  * `systray = boolean (0 or 1) SVN ONLY` : enabled or disabled systray
+
   * `systray_padding = horizontal_left_right_padding vertical_padding horizontal_spacing` 
 
   * `systray_background_id = integer` : Which background to use for non selected tasks
@@ -168,7 +170,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
 = Tooltip =
 
-  * `tooltip = boolean (0 or 1) SVN ONLY`               : Display tooltip on task
+  * `tooltip = boolean (0 or 1) SVN ONLY`               : enabled or disabled tooltip on task
 
   * `tooltip_padding = horizontal_padding vertical_padding SVN ONLY`
 
@@ -184,7 +186,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
 = Battery =
 
-  * `battery = boolean (0 or 1)`               : Display battery applet or not
+  * `battery = boolean (0 or 1)`               : enabled or disabled battery applet
 
   * `battery_low_status = integer`: At what battery percent does the icon show battery low
 
