@@ -149,7 +149,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 = Clock ==
 
   * `time1_format = %H:%M`
-    * time1_format and time2_format use 'strftime' syntax. more info on parameters on http://www.manpagez.com/man/3/strftime/
+    * time1_format, time2_format and clock_tooltip use 'strftime' syntax. more info on parameters on http://www.manpagez.com/man/3/strftime/
     * comment time1_format and time2_format to hide clock
   
   * `time1_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]`
@@ -163,6 +163,8 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
   * `clock_padding = horizontal_padding vertical_padding`
 
   * `clock_background_id = integer` : Which background to use
+
+  * `clock_tooltip = %a, %d. %b %Y : Tooltip text SVN ONLY`
 
   * `clock_lclick_command = text` : Which command to execute on left click
 
