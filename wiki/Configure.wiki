@@ -207,8 +207,9 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
 = Mouse action =
 
-  Customize mouse action with : `none, close, toggle, iconify, shade, toggle_iconify`
-  
+  Customize mouse action with : `none, close, toggle, iconify, shade, toggle_iconify, maximize_restore, desktop_left, desktop_right, next_task, prev_task`.
+  Action `maximize_restore, desktop_left, desktop_right, next_task, prev_task` are SVN ONLY.
+
   Sample format:
   {{{
   mouse_middle = none
