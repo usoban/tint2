@@ -107,6 +107,8 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
 = Task =
 
+  * `urgent_nb_of_blink = integer`               : Number of blink on 'get attention' event
+
   * `task_icon = boolean (0 or 1)`               : Display task icon or not
 
   * `task_text = boolean (0 or 1)`               : Display task text or not
