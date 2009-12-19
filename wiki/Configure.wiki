@@ -1,9 +1,9 @@
-#summary Customizing your tint2rc
+#summary Customizing your tint2rc (with tint2 version 0.8)
 #labels Phase-Deploy
 #sidebar TOCArticles
 <wiki:toc />
 
-The first time you run tint2, it will create the config file in `$HOME/.config/tint2/tint2rc` .   If you upgraded from tint 0.6 , no worries, tint2 is backward compatible with the old config file.
+The first time you run tint2, it will create the config file in `$HOME/.config/tint2/tint2rc` . tint2 is backward compatible with the old config file.
 
 You can customize tint2rc or specify another file on the command line with -c option.
 eg. : `tint2 -c $HOME/tint2.conf`
@@ -85,7 +85,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `wm_menu = boolean (0 or 1)`               : Display WM menu when right clic in an empty place of the panel
 
-  * `panel_dock = boolean (0 or 1) SVN ONLY`            : Put tint2 into the window managers dock. For the openbox window manager I can advise to use also a modifier for the moveButton option, otherwise the mouse click is not forwarded to tint2 (in ~/.config/openbox/rc.xml). The drag'n'drop functionality will not work if tint2 is put into the dock.
+  * `panel_dock = boolean (0 or 1)`            : Put tint2 into the window managers dock. For the openbox window manager I can advise to use also a modifier for the moveButton option, otherwise the mouse click is not forwarded to tint2 (in ~/.config/openbox/rc.xml). The drag'n'drop functionality will not work if tint2 is put into the dock.
  
 
 
@@ -101,7 +101,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `taskbar_background_id = integer` : Which background to use
 
-  * `taskbar_active_background_id = integer SVN ONLY` : Which background to use for current desktop.
+  * `taskbar_active_background_id = integer` : Which background to use for current desktop.
 
   http://farm4.static.flickr.com/3521/3266303292_14d9b6b623.jpg
 
@@ -127,9 +127,9 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
                                                        
   * `task_active_font_color = color opacity (0 to 100)`
 
-  * `task_icon_asb = alpha (0 to 100) saturation (-100 to 100) brightness (-100 to 100) SVN ONLY` : adjust icon's color and transparency for task.
+  * `task_icon_asb = alpha (0 to 100) saturation (-100 to 100) brightness (-100 to 100)` : adjust icon's color and transparency for task.
 
-  * `task_active_icon_asb = alpha (0 to 100) saturation (-100 to 100) brightness (-100 to 100) SVN ONLY` : adjust icon's color and transparency for active task
+  * `task_active_icon_asb = alpha (0 to 100) saturation (-100 to 100) brightness (-100 to 100)` : adjust icon's color and transparency for active task
 
   * `task_background_id = integer` : Which background to use for non selected tasks
 
@@ -139,14 +139,14 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
 = System Tray ==
 
-  * `systray = boolean (0 or 1) SVN ONLY` : enabled or disabled systray
+  * `systray = boolean (0 or 1)` : enabled or disabled systray
 
   * `systray_padding = horizontal_left_right_padding vertical_padding horizontal_spacing` 
 
   * `systray_background_id = integer` : Which background to use for non selected tasks
 
   To disable the tint2 system tray, comment out `systray padding`
-  *  `systray_sort = ascending/descending/left2right/right2left  SVN ONLY` : Sorting order for icon's systray (if left2right or right2left the order can be different on restart)
+  *  `systray_sort = ascending/descending/left2right/right2left` : Sorting order for icon's systray (if left2right or right2left the order can be different on restart)
 
 = Clock ==
 
@@ -166,7 +166,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `clock_background_id = integer` : Which background to use
 
-  * `clock_tooltip = %a, %d. %b %Y : Tooltip text SVN ONLY`
+  * `clock_tooltip = %a, %d. %b %Y : Tooltip text`
 
   * `clock_lclick_command = text` : Which command to execute on left click
 
@@ -174,19 +174,19 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
 = Tooltip =
 
-  * `tooltip = boolean (0 or 1) SVN ONLY`               : enabled or disabled tooltip on task
+  * `tooltip = boolean (0 or 1)`               : enabled or disabled tooltip on task
 
-  * `tooltip_padding = horizontal_padding vertical_padding SVN ONLY`
+  * `tooltip_padding = horizontal_padding vertical_padding`
 
-  * `tooltip_show_timeout = float SVN ONLY` : delay to show tooltip in second
+  * `tooltip_show_timeout = float` : delay to show tooltip in second
 
-  * `tooltip_hide_timeout = float SVN ONLY` : delay to close tooltip in second
+  * `tooltip_hide_timeout = float` : delay to close tooltip in second
 
-  * `tooltip_background_id = integer SVN ONLY` : Which background to use
+  * `tooltip_background_id = integer` : Which background to use
 
-  * `tooltip_font_color = color opacity  (0 to 100) SVN ONLY`
+  * `tooltip_font_color = color opacity  (0 to 100)`
 
-  * `tooltip_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE] SVN ONLY`
+  * `tooltip_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]`
 
 = Battery =
 
@@ -210,8 +210,6 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 = Mouse action =
 
   Customize mouse action with : `none, close, toggle, iconify, shade, toggle_iconify, maximize_restore, desktop_left, desktop_right, next_task, prev_task`.
-
-  Action `maximize_restore, desktop_left, desktop_right, next_task, prev_task` are SVN ONLY.
 
   Sample format:
   {{{
