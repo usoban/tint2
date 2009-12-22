@@ -182,7 +182,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `tooltip_hide_timeout = float` : delay to close tooltip in second
 
-  * `tooltip_background_id = integer` : Which background to use
+  * `tooltip_background_id = integer` : Which background to use (alpha channel is disregarded, rounded is disregarded)
 
   * `tooltip_font_color = color opacity  (0 to 100)`
 
