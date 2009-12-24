@@ -207,7 +207,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
   * `battery_background_id = integer` : Which background to use
 
 
-= Mouse action =
+= Mouse action on task =
 
   Customize mouse action with : `none, close, toggle, iconify, shade, toggle_iconify, maximize_restore, desktop_left, desktop_right, next_task, prev_task`.
 
@@ -218,6 +218,16 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
   mouse_scroll_up = toggle
   mouse_scroll_down = iconify
   }}}
+
+  close : close the task
+  toggle : toggle the task
+  iconify : iconify the task
+  toggle_iconify : toggle or iconify the task
+  maximize_restore : maximized or minimized the task
+  desktop_left : send the task to the desktop on the left
+  desktop_right : send the task to the desktop on the right
+  next_task : send the focus to next task
+  prev_task : send the focus to previous task
 
 = An example tint2rc =
 {{{
