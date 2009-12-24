@@ -219,6 +219,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
   mouse_scroll_down = iconify
   }}}
 
+  {{{
   close : close the task
   toggle : toggle the task
   iconify : iconify the task
@@ -228,6 +229,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
   desktop_right : send the task to the desktop on the right
   next_task : send the focus to next task
   prev_task : send the focus to previous task
+  }}}
 
 = An example tint2rc =
 {{{
