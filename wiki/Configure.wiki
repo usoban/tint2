@@ -83,7 +83,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `panel_background_id = integer` : Which background to use
 
-  * `wm_menu = boolean (0 or 1)`               : Display WM menu when right clic in an empty place of the panel
+  * `wm_menu = boolean (0 or 1)`               : Allow tint2 to forward mouse event to your Window Manager. On *box, right clic will show the WM menu.
 
   * `panel_dock = boolean (0 or 1)`            : Put tint2 into the window managers dock. For the openbox window manager I can advise to use also a modifier for the moveButton option, otherwise the mouse click is not forwarded to tint2 (in ~/.config/openbox/rc.xml). The drag'n'drop functionality will not work if tint2 is put into the dock.
  
