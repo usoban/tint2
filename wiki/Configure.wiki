@@ -83,9 +83,9 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `panel_background_id = integer` : Which background to use
 
-  * `wm_menu = boolean (0 or 1)`               : Allow tint2 to forward mouse event to your Window Manager. On *box, right clic will show the WM menu.
+  * `wm_menu = boolean (0 or 1)`               : Allow tint2 to forward mouse event to your Window Manager. Every mouse click which tint2 will not handle, will be forwarded to the window manager.
 
-  * `panel_dock = boolean (0 or 1)`            : Put tint2 into the window managers dock. For the openbox window manager I can advise to use also a modifier for the moveButton option, otherwise the mouse click is not forwarded to tint2 (in ~/.config/openbox/rc.xml). The drag'n'drop functionality will not work if tint2 is put into the dock.
+  * `panel_dock = boolean (0 or 1)`            : Put tint2 into the window managers dock. For the openbox window manager I can advise to use also a modifier for the moveButton option, otherwise the mouse click is not forwarded to tint2 (in ~/.config/openbox/rc.xml).
  
 
 
@@ -230,6 +230,8 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
   next_task : send the focus to next task
   prev_task : send the focus to previous task
   }}}
+
+If a mouse action is set to `none` and `wm_menu = 1` is set, the mouse click is forwarded to the window manager.
 
 = An example tint2rc =
 {{{
