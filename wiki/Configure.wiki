@@ -83,7 +83,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `panel_background_id = integer` : Which background to use
 
-  * `wm_menu = boolean (0 or 1)`               : Allow tint2 to forward mouse event to your Window Manager. Every mouse click which tint2 will not handle, will be forwarded to the window manager.
+  * `wm_menu = boolean (0 or 1)`               : Allow tint2 to forward mouse event to your Window Manager. tint2-0.8 forwards a click only on free areas. tint2-SVN forwards every click which is not handeled by tint2.
 
   * `panel_dock = boolean (0 or 1)`            : Put tint2 into the window managers dock. For the openbox window manager I can advise to use also a modifier for the moveButton option, otherwise the mouse click is not forwarded to tint2 (in ~/.config/openbox/rc.xml).
  
@@ -154,9 +154,14 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
     * time1_format, time2_format and clock_tooltip use 'strftime' syntax. more info on parameters on http://www.manpagez.com/man/3/strftime/
     * comment time1_format and time2_format to hide clock
   
+  * `time1_timezone = :US/Hawaii`
+    * time1_timezone, time2_timezone and clock_tooltip_timezone can be used to specify a timezone. If you do not specify a value the system-wide timezone is used. The timezones can usually be found in /usr/share/zoneinfo. If your timezones are in a different directory, you need to specify the absolute path, i.e. time1_timezone = :/different/zoneinfo/dir/US/Hawaii (always prepend with a ':')
+
   * `time1_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]`
 
   * `time2_format = %A %d %B`
+
+  * `time2_timezone = :Europe/Berlin`
 
   * `time2_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]`
 
@@ -166,7 +171,9 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `clock_background_id = integer` : Which background to use
 
-  * `clock_tooltip = %a, %d. %b %Y : Tooltip text`
+  * `clock_tooltip = %a, %d. %b %Y : clock tooltip text`
+
+  * `clock_tooltip_timezone = :UTC`
 
   * `clock_lclick_command = text` : Which command to execute on left click
 
@@ -231,7 +238,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
   prev_task : send the focus to previous task
   }}}
 
-If a mouse action is set to `none` and `wm_menu = 1` is set, the mouse click is forwarded to the window manager.
+If a mouse action is set to `none` and `wm_menu = 1` is set, the mouse click is forwarded to the window manager (`SVN_ONLY`)
 
 = An example tint2rc =
 {{{
