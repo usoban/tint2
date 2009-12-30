@@ -87,6 +87,9 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `panel_dock = boolean (0 or 1)`            : Put tint2 into the window managers dock. For the openbox window manager I can advise to use also a modifier for the moveButton option, otherwise the mouse click is not forwarded to tint2 (in ~/.config/openbox/rc.xml).
  
+  * `real_transparency = boolean (0 or 1)` : Switches real transparency on/off. Be aware that some system tray applications may not be visible. (`SVN ONLY`)
+
+  * `panel_layer = bottom,normal,top` : Puts tint2 into the bottom/normal/top layer. Default is the bottom layer, but for real transparency normal or top layer may be a nice alternative. (`SVN ONLY`)
 
 
 = Taskbar (pager like capability) =
@@ -189,7 +192,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `tooltip_hide_timeout = float` : delay to close tooltip in second
 
-  * `tooltip_background_id = integer` : Which background to use (alpha channel is disregarded, rounded is disregarded)
+  * `tooltip_background_id = integer` : Which background to use (if `real_transparency = 0` alpha channel and rounded are not respected)
 
   * `tooltip_font_color = color opacity  (0 to 100)`
 
