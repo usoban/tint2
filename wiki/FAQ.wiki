@@ -26,7 +26,7 @@ systray_background_id = 0
 systray_sort = left2right
     }}}
 
-= tint2 doesn't show the systray/notifiaction =
+= tint2 doesn't show the systray/notification =
   * Check your tint2rc to see if you have 'systray = 1'
   * run tint2 in a terminal. if you get 'tint2 : another systray is running' it's because you have another systray/notification and you can't run more than one at a time. 
     * In gnome, remove the systray/notification with a right clic on the separator before your systray/notification -> remove
