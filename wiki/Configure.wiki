@@ -247,6 +247,19 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
 If a mouse action is set to `none` and `wm_menu = 1` is set, the mouse click is forwarded to the window manager (`SVN_ONLY`)
 
+= Panel autohide =
+
+  * `autohide = boolean (0 or 1)` : enable(=1) or disable(=0) autohiding (`SVN ONLY`)
+
+  * `autohide_show_timeout = float` : show timeout in seconds (`SVN ONLY`)
+
+  * `autohide_hide_timeout = float` : hide timeout in seconds (`SVN ONLY`)
+
+  * `autohide_height = integer` : panel height (width for vertical panels) in hidden mode (`SVN ONLY`)
+
+  * `strut_policy = minimum/follow_size` : Should the strut follow tint2 size or always be the minimum size (struts are used by the window manager, to decide the size of maximized windows) (`SVN ONLY`)
+
+
 = An example tint2rc =
 {{{
 #---------------------------------------------
