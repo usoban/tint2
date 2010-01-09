@@ -128,15 +128,16 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `task_font_color = color opacity (0 to 100)`
                                                        
-  * `task_active_font_color = color opacity (0 to 100)`
-
   * `task_icon_asb = alpha (0 to 100) saturation (-100 to 100) brightness (-100 to 100)` : adjust icon's color and transparency for task.
-
-  * `task_active_icon_asb = alpha (0 to 100) saturation (-100 to 100) brightness (-100 to 100)` : adjust icon's color and transparency for active task
 
   * `task_background_id = integer` : Which background to use for non selected tasks
 
-  * `task_active_background_id = integer` : Which background to use when task is selected
+  For the next 3 options STATUS can be `active` / `iconified` / `urgent`.
+  * `task_STATUS_font_color = color opacity (0 to 100)` (`SVN ONLY`)
+
+  * `task_STATUS_icon_asb = alpha (0 to 100) saturation (-100 to 100) brightness (-100 to 100)` : adjust icon's color and transparency for active task (`SVN ONLY`)
+
+  * `task_STATUS_background_id = integer` : Which background to use when task is selected (`SVN ONLY`)
 
   http://farm4.static.flickr.com/3086/3265475337_262799ded3.jpg
 
@@ -148,7 +149,6 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `systray_background_id = integer` : Which background to use for non selected tasks
 
-  To disable the tint2 system tray, comment out `systray padding`
   *  `systray_sort = ascending/descending/left2right/right2left` : Sorting order for icon's systray (if left2right or right2left the order can be different on restart)
 
   *  `systray_icon_size = max_icon_size`  : Set the maximum system tray icon size to `number`. Set to `0` for automatic icon size
