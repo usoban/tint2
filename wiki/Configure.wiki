@@ -247,8 +247,8 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
 If a mouse action is set to `none` and `wm_menu = 1` is set, the mouse click is forwarded to the window manager (`SVN_ONLY`)
 
-= Panel autohide = (`SVN ONLY`)
-
+= Panel autohide =
+(`SVN ONLY`)
   * `autohide = boolean (0 or 1)` : enable(=1) or disable(=0) autohiding (`SVN ONLY`)
 
   * `autohide_show_timeout = float` : show timeout in seconds (`SVN ONLY`)
