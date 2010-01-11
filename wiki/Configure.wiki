@@ -132,8 +132,8 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `task_background_id = integer` : Which background to use for non selected tasks
 
-  For the next 3 options STATUS can be `active` / `iconified` / `urgent`.
-  * `task_STATUS_font_color = color opacity (0 to 100)` (`SVN ONLY`)
+  For the next 3 options STATUS can be `active` / `iconified` (`SVN ONLY`)  / `urgent` (`SVN ONLY`).
+  * `task_STATUS_font_color = color opacity (0 to 100)` 
 
   * `task_STATUS_icon_asb = alpha (0 to 100) saturation (-100 to 100) brightness (-100 to 100)` : adjust icon's color and transparency for active task (`SVN ONLY`)
 
@@ -151,9 +151,9 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   *  `systray_sort = ascending/descending/left2right/right2left` : Sorting order for icon's systray (if left2right or right2left the order can be different on restart)
 
-  *  `systray_icon_size = max_icon_size`  : Set the maximum system tray icon size to `number`. Set to `0` for automatic icon size
+  *  `systray_icon_size = max_icon_size`  : Set the maximum system tray icon size to `number`. Set to `0` for automatic icon size (`SVN ONLY`)
 
-  * `systray_icon_asb = alpha (0 to 100) saturation (-100 to 100) brightness (-100 to 100) : adjust icon's color and transparency for system tray icons
+  * `systray_icon_asb = alpha (0 to 100) saturation (-100 to 100) brightness (-100 to 100)` : adjust icon's color and transparency for system tray icons (`SVN ONLY`)
 
 = Clock ==
 
@@ -247,7 +247,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
 If a mouse action is set to `none` and `wm_menu = 1` is set, the mouse click is forwarded to the window manager (`SVN_ONLY`)
 
-= Panel autohide =
+= Panel autohide = (`SVN ONLY`)
 
   * `autohide = boolean (0 or 1)` : enable(=1) or disable(=0) autohiding (`SVN ONLY`)
 
