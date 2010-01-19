@@ -206,7 +206,9 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `battery = boolean (0 or 1)`               : enabled or disabled battery applet
 
-  * `battery_low_status = integer`: At what battery percent does the icon show battery low
+  * `battery_hide = never or an integer (0 to 100)`: At what battery percent does the battery hide
+
+  * `battery_low_status = integer`: At what battery percent does the icon show battery low command
 
   * `battery_low_cmd = notify-send "battery low"` :What to do when battery is low
 
