@@ -3,10 +3,12 @@
 #sidebar TOCArticles
 <wiki:toc />
 
-The first time you run tint2, it will create the config file in `$HOME/.config/tint2/tint2rc` . tint2 is backward compatible with the old config file.
+The first time you run tint2, it will create the config file in `$HOME/.config/tint2/tint2rc` .
 
-You can customize tint2rc or specify another file on the command line with -c option.
+You can specify another file on the command line with -c option.
 eg. : `tint2 -c $HOME/tint2.conf`
+
+When you change the config file, the command line 'killall -SIGUSR1 tint2' will force tint2 to reload it.
 
 Configuration marked as `SVN ONLY` are not yet supported and could change in the next stable release.
 
