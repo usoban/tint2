@@ -59,18 +59,13 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
 = Tint2 Pre-Built binaries =
   Please note that, for now, since tint2 is still under development, there might be a few bugs.
   
-  == For Ubuntu 8.10 (Intrepid) ==
+  == For Ubuntu 9.10 (Karmic) ==
     Tint2 .deb files are built and can be found [https://launchpad.net/~killeroid/+archive/ppa here].
-    Add these to your sources.list 
+    Run this command to add the repository to your sources.list and install tint2
     {{{
-    deb http://ppa.launchpad.net/killeroid/ppa/ubuntu intrepid main
-    deb-src http://ppa.launchpad.net/killeroid/ppa/ubuntu intrepid main
+    sudo add-apt-repository ppa:killeroid/ppa && sudo aptitude update && sudo aptitude install tint2
     }}}
-    and then run this command in terminal to import the repositories GPG key:
-    {{{
-    sudo apt-key adv --recv-keys --keyserver keyserver.ubuntu.com C4412AEB3B1D5F58E8149B7DD9DAAF25C26CCF8E
-    }}}
-
+    
   == For Ubuntu 9.04 (Jaunty) ==
     Add these to your sources.list 
     {{{
