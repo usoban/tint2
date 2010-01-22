@@ -83,6 +83,13 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
     emerge -av tint2
     }}}
 
+  == For Arch Linux ==
+    Simply run:
+    {{{
+    sudo pacman -S tint2
+    }}}
+
+
 = Running tint2 =
 
    * Execute {{{tint2}}} to start tint2
@@ -90,10 +97,15 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
    * [Configure Configuring your tint2 config file]
   
   == Autorun tint2 at startup ==
-    * *Openbox3 users* : Add `tint2 &` in Openbox config file `$HOME/.config/openbox/autostart.sh`
+    * *Openbox3 users* : Add the following command in Openbox config file `$HOME/.config/openbox/autostart.sh`
+    {{{
+(sleep 2s && tint2) &
+    }}}
+
     * *Ubuntu users* : Go to System > Preferences > Sessions . Click on add.
     http://farm4.static.flickr.com/3043/3287368393_57101eabfa.jpg
     
+On startup, tint2 detect if you have a composite manager and use real transparency if you have one. Otherwise, tint2 use fake transparency.
 
 
 = Any Problems =
