@@ -96,7 +96,7 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
    * Or execute {{{tint2  -c  path_to_config_file}}}
    * [Configure Configuring your tint2 config file]
 
-On startup, tint2 detect if you have a composite manager and use real transparency if you have one. Otherwise, tint2 use fake transparency.
+On startup, tint2 detect if you have a composite manager and use real transparency if you have one. <br>Otherwise, tint2 use fake transparency.
 
 
   == Autorun tint2 in Openbox ==
@@ -104,22 +104,23 @@ On startup, tint2 detect if you have a composite manager and use real transparen
     {{{
 (sleep 2s && tint2) &
     }}}
-    And restart Openbox
+    And restart Openbox<br>
     If you run a composite manager (xcompmgr, compiz, ...), increase sleep time until it's ready.
 
   == Autorun tint2 in Fluxbox ==
-    Remove fluxbox pannel and systray in ~/.fluxbox/init
-    Remove systemtray from the list of items in the line session.screen0.toolbar.tools.
-    On line session.screen0.toolbar.visible: true. Change true to false.
-    Add (sleep 2s && tint2) & in ~/.fluxbox/startup
-    Restart Fluxbox.
+    Remove fluxbox pannel and systray in ~/.fluxbox/init<br>
+    Remove systemtray from the list of items in the line session.screen0.toolbar.tools.<br>
+    On line session.screen0.toolbar.visible: true. Change true to false.<br>
+    Add (sleep 2s && tint2) & in ~/.fluxbox/startup<br>
+    Restart Fluxbox.<br>
 
   == Autorun tint2 in Pekwm ==
-
+<br><br>
   == Autorun tint2 in Xfce ==
-
+<br><br>
   == Autorun tint2 in Gnome ==
-    Go to System > Preferences > Sessions . Click on add.
+    Go to System > Preferences > Sessions.<br>
+    Click on add.<br>
     http://farm4.static.flickr.com/3043/3287368393_57101eabfa.jpg
     
 
