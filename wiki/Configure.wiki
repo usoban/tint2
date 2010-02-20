@@ -259,7 +259,7 @@ If a mouse action is set to `none` and `wm_menu = 1` is set, the mouse click is 
 
   * `autohide_height = integer` : panel height (width for vertical panels) in hidden mode
 
-  * `strut_policy = minimum/follow_size` : Should the strut follow tint2 size or always be the minimum size (struts are used by the window manager, to decide the size of maximized windows)
+  * `strut_policy = minimum/follow_size/none(SVN ONLY)` : Should the strut follow tint2 size or always be the minimum size, or not be registered at all (struts are used by the window manager, to decide the size of maximized windows)
 
 
 = An example tint2rc =
