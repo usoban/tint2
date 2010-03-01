@@ -91,6 +91,8 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
  
   * `panel_layer = bottom,normal,top` : Puts tint2 into the bottom/normal/top layer. Default is the bottom layer, but for real transparency normal or top layer may be a nice alternative.
 
+  * `strut_policy = follow_size/minimum/none(SVN ONLY)` : Should the strut follow tint2 size or always be the minimum size, or not be registered at all (struts are used by the window manager, to decide the size of maximized windows). `minimum` option is interresting when used with `autohide_height` parameter.
+
 
 = Taskbar (pager like capability) =
 
@@ -258,8 +260,6 @@ If a mouse action is set to `none` and `wm_menu = 1` is set, the mouse click is 
   * `autohide_hide_timeout = float` : hide timeout in seconds
 
   * `autohide_height = integer` : panel height (width for vertical panels) in hidden mode
-
-  * `strut_policy = minimum/follow_size/none(SVN ONLY)` : Should the strut follow tint2 size or always be the minimum size, or not be registered at all (struts are used by the window manager, to decide the size of maximized windows)
 
 
 = An example tint2rc =
