@@ -18,13 +18,16 @@ For now, the theme switcher doesn't work if tint2 is running with -c parameter.
 
   On startup, the theme switcher show your current config file.
   
-  
+  http://img405.imageshack.us/img405/9373/ecran1.jpg
+
 
 = Adding theme =
 
   The theme switcher use an extension `.tint2rc` to identify config files. 
   * Rename tint2 config with `.tint2rc` extension
   * Open menu Theme > Add, select the config file and Add
+  
+  http://img52.imageshack.us/img52/4148/ecran2j.jpg
 
 
 = Switching theme =
