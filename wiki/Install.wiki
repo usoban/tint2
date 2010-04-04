@@ -5,7 +5,7 @@
 
 = Introduction =
 
-Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binaries are available. Tint2 come with a panel (named tint2) and a theme swicher (named tint2conf).
+Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binaries are available.<br>Tint2 come with a panel (named tint2) and a theme swicher (named tint2conf).
 
 
 = Install Manually =
