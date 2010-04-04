@@ -1,4 +1,6 @@
 #summary How to use theme switcher
+#sidebar TOCArticles
+<wiki:toc />
 
 The theme switcher is `SVN ONLY`.
 
@@ -35,5 +37,3 @@ For now, the theme switcher doesn't work if tint2 is running with -c parameter.
   The `properties` button open current theme in `gedit`.
 
   When the change are saved, you can update panel's preview with menu Refresh.
-
-
