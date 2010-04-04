@@ -1,0 +1,39 @@
+#summary How to use theme switcher
+
+The theme switcher is `SVN ONLY`.
+
+The theme switcher made easier the management of different config file for tint2.
+
+It'll give a preview of each config with your current setting (backgroud, size of monitor, ...), and allow to switch between tint2 config.
+
+For now, the theme switcher doesn't work if tint2 is running with -c parameter.
+
+
+
+= Running =
+
+  Start the theme switcher with command `tint2conf`.
+
+  On startup, the theme switcher show your current config file.
+  
+  
+
+= Adding theme =
+
+  The theme switcher use an extension `.tint2rc` to identify config files. 
+  * Rename tint2 config with `.tint2rc` extension
+  * Open menu Theme > Add, select the config file and Add
+
+
+= Switching theme =
+
+  Double clic on a panel will change tint2 config file and restart the panel.
+
+
+= Editing theme =
+
+  The `properties` button open current theme in `gedit`.
+
+  When the change are saved, you can update panel's preview with menu Refresh.
+
+
