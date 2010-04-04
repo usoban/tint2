@@ -5,12 +5,13 @@
 
 = Introduction =
 
-Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binaries are avaiable.
+Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binaries are available. Tint2 come with a panel (named tint2) and a theme swicher (named tint2conf).
 
 
 = Install Manually =
    == Dependencies ==
    Tint2 depends on *cairo*, *pango*, *glib2*, *imlib2*, *xinerama*, *libXrender*, *libXcomposite*, *libXdamage*, *libx11*.
+
    On *Ubuntu*, use this command :
    {{{
    sudo aptitude install libcairo2-dev libpango1.0-dev libglib2.0-dev libimlib2-dev libxinerama-dev libx11-dev libxdamage-dev libxcomposite-dev libxrender-dev
@@ -90,9 +91,9 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
     }}}
 
 
-= Running tint2 =
+= Running =
 
-   * Execute {{{tint2}}} to start tint2
+   * Execute {{{tint2}}} to start the panel and {{{tint2conf}}} to start the theme switcher
    * Or execute {{{tint2  -c  path_to_config_file}}}
    * [Configure Configuring your tint2 config file]
 
@@ -114,10 +115,6 @@ On startup, tint2 detect if you have a composite manager and use real transparen
     Add (sleep 2s && tint2) & in ~/.fluxbox/startup<br>
     Restart Fluxbox.<br>
 
-  == Autorun tint2 in Pekwm ==
-<br><br>
-  == Autorun tint2 in Xfce ==
-<br><br>
   == Autorun tint2 in Gnome ==
     Go to System > Preferences > Sessions.<br>
     Click on add.<br>
