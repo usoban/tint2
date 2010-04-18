@@ -43,7 +43,7 @@ systray_background_id = 0
 = How to configure real transparency (xcompmgr) =
   * tint2 autodetect composite manager and use real transparency when possible. However, xcompmgr have a little bug witch prevent tint2 to detect it. 
     {{{      
-See <a>http://bugs.freedesktop.org/show_bug.cgi?id=26090</a>
+See <a href="http://bugs.freedesktop.org/show_bug.cgi?id=26090">xcompmgr patch</a>
      }}}
   * If you want autodetect with xcompmgr, download and applied xcompmgr's patch (in bug report).
 
