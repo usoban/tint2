@@ -41,7 +41,7 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
    ./configure --prefix=/usr --sysconfdir=/etc
    make
    }}}
-   NOTE: see *./configure --help* for further informations.
+   NOTE: see *./configure --help* for further informations.<br>
    For better integration with xcompmgr, see <a href="http://code.google.com/p/tint2/wiki/FAQ#How_to_configure_real_transparency_(xcompmgr)">xcompmgr patch</a>
 
    == Install ==
