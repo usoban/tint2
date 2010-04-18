@@ -8,7 +8,7 @@ Frequently asked questions. Please add any extra tips to the comments.
   * Tint2 is a panel/taskbar for modern x window managers like GNOME, KDE, XFCE, openbox, pekwm,etc..
 
 = Who is the developer of tint2? =
-  * The main developer of tint2 is Thierry Lorthiois
+  * Main developers of tint2 are Thierry Lorthiois and Andreas Fink
 
 = Does tint2 have a system tray/notification area? =
   * YES! Tint2 finally has system tray/notification area. Please [Install install] the latest build if your current build doesn't have it.
@@ -39,6 +39,13 @@ systray = 0
 systray_padding = 0 3 3
 systray_background_id = 0
      }}}
+
+= How to configure real transparency (xcompmgr) =
+  * tint2 autodetect composite manager and use real transparency when possible. However, xcompmgr have a little bug witch prevent tint2 to detect it. 
+    {{{      
+See http://bugs.freedesktop.org/show_bug.cgi?id=26090
+     }}}
+  * If you want autodetect with xcompmgr, download and applied xcompmgr's patch (in bug report).
 
 = Tint2 doesn't work on compiz correctly? =
   * All my tasks are on one desktop in compiz?
