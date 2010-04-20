@@ -6,6 +6,7 @@
 = Introduction =
 
 Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binaries are available.<br>Tint2 come with a panel (named tint2) and a theme swicher (named tint2conf).
+<br>Tint2 require an EWMH compatible Window manager and an UTF-8 system.
 
 
 = Install Manually =
