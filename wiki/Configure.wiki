@@ -194,9 +194,9 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `tooltip_padding = horizontal_padding vertical_padding`
 
-  * `tooltip_show_timeout = float` : delay to show tooltip in second
+  * `tooltip_show_timeout = float` : delay to show tooltip in second. Use '.' as decimal separator.
 
-  * `tooltip_hide_timeout = float` : delay to close tooltip in second
+  * `tooltip_hide_timeout = float` : delay to close tooltip in second. Use '.' as decimal separator.
 
   * `tooltip_background_id = integer` : Which background to use (in fake transparency the alpha channel and rounded are not respected)
 
@@ -255,9 +255,9 @@ If a mouse action is set to `none` and `wm_menu = 1` is set, the mouse click is 
 
   * `autohide = boolean (0 or 1)` : enable(=1) or disable(=0) autohiding
 
-  * `autohide_show_timeout = float` : show timeout in seconds
+  * `autohide_show_timeout = float` : show timeout in seconds. Use '.' as decimal separator.
 
-  * `autohide_hide_timeout = float` : hide timeout in seconds
+  * `autohide_hide_timeout = float` : hide timeout in seconds. Use '.' as decimal separator.
 
   * `autohide_height = integer` : panel height (width for vertical panels) in hidden mode
 
