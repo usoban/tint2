@@ -7,7 +7,7 @@ Frequently asked questions. Please add any extra tips to the comments.
 = What is tint2? =
   * Tint2 is a panel/taskbar for modern x window managers like GNOME, KDE, XFCE, openbox, pekwm,etc..
 
-= Who is the developer of tint2? =
+= Who is the developer of tint2 ? =
   * Main developers of tint2 are Thierry Lorthiois and Andreas Fink
 
 = Does tint2 have a system tray/notification area? =
@@ -30,6 +30,9 @@ systray_sort = left2right
   * Check your tint2rc to see if you have 'systray = 1'
   * run tint2 in a terminal. if you get 'tint2 : another systray is running' it's because you have another systray/notification and you can't run more than one at a time. 
     * In gnome, remove the systray/notification with a right clic on the separator before your systray/notification -> remove
+
+= why some systray icons disappeare from the panel ? =
+  * tint2 made a stop/restart of systray protocol on some events (like switching theme with tint2conf). But some systray icon doesn't implement the stop/restart of the manager and disappeared from the panel. You can report the problem to us but also to the systray icon developper.
 
 = I want to disable the tint2 systray =
   * To disable the systray, just put `systray = 0` in your tint2rc
