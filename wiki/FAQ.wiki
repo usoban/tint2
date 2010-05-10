@@ -31,7 +31,7 @@ systray_sort = left2right
   * run tint2 in a terminal. if you get 'tint2 : another systray is running' it's because you have another systray/notification and you can't run more than one at a time. 
     * In gnome, remove the systray/notification with a right clic on the separator before your systray/notification -> remove
 
-= why some systray icons disappeare from the panel ? =
+= why some systray icons disappeared from the panel ? =
   * tint2 made a stop/restart of systray protocol on some events (like switching theme with tint2conf). But some systray icon doesn't implement the stop/restart of the manager and disappeared from the panel. You can report the problem to us but also to the systray icon developper.
 
 = I want to disable the tint2 systray =
