@@ -37,6 +37,7 @@ For now, the theme switcher doesn't work if tint2 is running with -c parameter.
 
 = Editing theme =
 
-  The `properties` button open current theme in `gedit`.
+  The `properties` button open current theme in `tintwizard` config tool.
 
-  When the change are saved, you can update panel's preview with menu Refresh.
+  When a config file is changed, you can update panel's preview with menu Edit > Refresh.
+  When the background is changed, you can update panel's preview with menu Edit > Refresh all.
