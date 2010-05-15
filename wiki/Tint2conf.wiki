@@ -2,7 +2,6 @@
 #sidebar TOCArticles
 <wiki:toc />
 
-The theme switcher is `SVN ONLY`.
 
 The theme switcher made easier the management of different config file for tint2.
 
