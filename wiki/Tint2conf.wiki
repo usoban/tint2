@@ -44,10 +44,10 @@ For now, the theme switcher doesn't work if tint2 is running with -c parameter.
 
   if you want to edit theme with another program, open the file ~/.config/tint2/tint2confrc and changed the line 'cmd_property'
       {{{
-      #---------------------------------------------
-      # TINT2CONF CONFIG FILE
-      default_theme = /home/thil77/.config/tint2/text_only_1.tint2rc
-      cmd_property = gedit
-      width = 746
-      height = 587
+ #---------------------------------------------
+ # TINT2CONF CONFIG FILE
+ default_theme = /home/thil77/.config/tint2/text_only_1.tint2rc
+ cmd_property = gedit
+ width = 746
+ height = 587
       }}}   
