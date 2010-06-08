@@ -11,21 +11,21 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
 
 = Install Manually =
    == Dependencies ==
-   Tint2 depends on *cairo*, *pango*, *glib2*, *imlib2*, *xinerama*, *libXrender*, *libXcomposite*, *libXdamage*, *libx11*.
+   Tint2 depends on *cairo*, *pango*, *glib2*, *imlib2*, *xinerama*, *libXrender*, *libXcomposite*, *libXdamage*, *libx11*, *libXrandr.
 
    On *Ubuntu*, use this command :
    {{{
-   sudo aptitude install libcairo2-dev libpango1.0-dev libglib2.0-dev libimlib2-dev libxinerama-dev libx11-dev libxdamage-dev libxcomposite-dev libxrender-dev
+   sudo aptitude install libcairo2-dev libpango1.0-dev libglib2.0-dev libimlib2-dev libxinerama-dev libx11-dev libxdamage-dev libxcomposite-dev libxrender-dev libxrandr-dev
    }}}
 
    On *debian*, use this command:
    {{{ 
-   apt-get install libcairo2-dev libpango1.0-dev libglib2.0-dev libimlib2-dev libxinerama-dev libx11-dev libxdamage-dev libxcomposite-dev libxrender-dev
+   apt-get install libcairo2-dev libpango1.0-dev libglib2.0-dev libimlib2-dev libxinerama-dev libx11-dev libxdamage-dev libxcomposite-dev libxrender-dev libxrandr-dev
    }}}
 
    On *gentoo*, use this command:
    {{{ 
-   emerge -av cairo pango glib:2 imlib2 libXinerama libX11 libXdamage libXcomposite libXrender
+   emerge -av cairo pango glib:2 imlib2 libXinerama libX11 libXdamage libXcomposite libXrender libXrandr
    }}}
 
    After these dependencies have been installed, you download the latest release and unpack the archive.
