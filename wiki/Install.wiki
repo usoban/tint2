@@ -43,12 +43,20 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
    make
    }}}
 
-   SVN version used cmake build tools.
+   SVN version uses cmake build tools.
    {{{
    cd tint2-<LATEST-RELEASE>
    cmake  -DCMAKE_INSTALL_PREFIX=/usr  ./
    make
    }}}
+   Or as out-of-source build:
+   {{{
+   cd tint2-<LATEST-RELEASE>
+   mkdir build && cd build
+   cmake -DCMAKE_INSTALL_PREFIX=/usr ../
+   make
+   }}}
+
    NOTE: see *./configure --help* for further informations.<br>
    For better integration with xcompmgr, see <a href="http://code.google.com/p/tint2/wiki/FAQ#How_to_configure_real_transparency_(xcompmgr)">xcompmgr patch</a>
 
