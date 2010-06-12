@@ -43,7 +43,7 @@ systray_padding = 0 3 3
 systray_background_id = 0
      }}}
 
-= How to configure real transparency (xcompmgr) =
+= How to configure real transparency =
   * tint2 autodetect composite manager and use real transparency when possible. However, xcompmgr have a little bug witch prevent tint2 to detect it. 
   * If you want autodetect with xcompmgr, download and applied xcompmgr's patch (in bug report). See <a href="http://bugs.freedesktop.org/show_bug.cgi?id=26090">xcompmgr patch</a>
 
@@ -62,10 +62,6 @@ systray_background_id = 0
 = I want to disable compiz shadow on Tint2 =
   * Run ccsm the compiz configuration tool. Go to Window Decorations. For both decoration and shadow windows, replace 'any' with 'any & !name=tint2'.
 
-= Window titles in tint2 are not updated =
-  * This bug has been fixed in versions newer than tint 0.6
-  * See [Install] to find out how to upgrade to the newer version of tint
-
 = Task list is limited =
   * In your tint2rc file check the value of `taskbar_mode`. if it's `multi_desktop`, tint2 show one taskbar per desktop. Change the value to `single_desktop` if you want just one taskbar.
 
@@ -75,16 +71,28 @@ systray_background_id = 0
 = I want to hide some tasks from the panel ? =
   * In Openbox config file 'rc.xml' you can assign the propertie 'skip_taskbar' to your window
 
-= I can't maximize any window over tint2 =
-  * This bug has been fixed in versions newer than tint 0.6
-  * See [Install] to find out how to upgrade to the newer version of tint
-
-= How to maximize window over tint2 in Openbox =
-  * Add a key mapping in openbox's config file ~/.config/openbox/rc.xml
+= How to maximize window over tint2 =
+  * You can manage interaction between tint2 and window with :
     {{{      
-<keybind key="W-p">
-  <action name="ToggleFullscreen"/>
-</keybind>
+panel_layer = bottom,normal,top
+strut_policy = follow_size/minimum/none
+autohide_height = integer
+     }}}
+   If you want maximized window never cover tint2:
+    {{{      
+panel_layer = top
+strut_policy = follow_size
+     }}}
+   If you want maximized window behind tint2:
+    {{{      
+panel_layer = top
+strut_policy = none
+     }}}
+   If you want maximized window behind tint2, but 2 pixels free so you can use desktop action (right click, ...):
+    {{{      
+panel_layer = top
+strut_policy = none
+autohide_height = 2
      }}}
 
 = I get errors when I try to compile tint2 on my own =
