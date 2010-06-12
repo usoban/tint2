@@ -78,17 +78,17 @@ panel_layer = bottom,normal,top
 strut_policy = follow_size/minimum/none
 autohide_height = integer
      }}}
-   If you want maximized window never cover tint2:
+If you want maximized window never cover tint2:
     {{{      
 panel_layer = top
 strut_policy = follow_size
      }}}
-   If you want maximized window behind tint2:
+If you want maximized window behind tint2:
     {{{      
 panel_layer = top
 strut_policy = none
      }}}
-   If you want maximized window behind tint2, but 2 pixels free so you can use desktop action (right click, ...):
+If you want maximized window behind tint2, but 2 pixels free so you can use desktop action (right click, ...):
     {{{      
 panel_layer = top
 strut_policy = none
