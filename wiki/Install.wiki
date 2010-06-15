@@ -44,6 +44,7 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
    }}}
    NOTE: see *./configure --help* for further informations.<br> <br>
 
+   == Building (from version 0.11 upwards) ==
    Version 0.11 and SVN version use cmake as build tool.
    {{{
    cd tint2-<LATEST-RELEASE>
