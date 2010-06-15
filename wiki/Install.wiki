@@ -59,8 +59,8 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
    cmake -DCMAKE_INSTALL_PREFIX=/usr ../
    make
    }}}
-   NOTE: see *cmake -L* for a list of possible variables which change building behaviour.
-
+   NOTE: see *cmake -L* for a list of possible variables which change building behaviour.<br>
+   NOTE2: If you have errors in the cmake-step, it can be very helpful to delete the file CMakeCache.txt in your build directory. <br><br>
    For better integration with xcompmgr, see <a href="http://code.google.com/p/tint2/wiki/FAQ#How_to_configure_real_transparency">xcompmgr patch</a>
 
    == Install ==
