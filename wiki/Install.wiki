@@ -36,7 +36,7 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
    }}}
 
    You start terminal in tint2 directory.
-   == Building ==
+   == Building (up to version 0.10) ==
    {{{
    cd tint2-<LATEST-RELEASE>
    ./configure --prefix=/usr --sysconfdir=/etc
@@ -44,7 +44,7 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
    }}}
    NOTE: see *./configure --help* for further informations.<br> <br>
 
-   SVN version uses cmake build tools.
+   Version 0.11 and SVN version use cmake as build tool.
    {{{
    cd tint2-<LATEST-RELEASE>
    cmake  -DCMAKE_INSTALL_PREFIX=/usr  ./
@@ -53,7 +53,8 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
    Or as out-of-source build:
    {{{
    cd tint2-<LATEST-RELEASE>
-   mkdir build && cd build
+   mkdir build
+   cd build
    cmake -DCMAKE_INSTALL_PREFIX=/usr ../
    make
    }}}
