@@ -91,7 +91,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
  
   * `panel_layer = bottom,normal,top` : Puts tint2 into the bottom/normal/top layer. Default is the bottom layer, but for real transparency normal or top layer may be a nice alternative.
 
-  * `strut_policy = follow_size/minimum/none` : Should the strut follow tint2 size or always be the minimum size, or not be registered at all (struts are used by the window manager, to decide the size of maximized windows). `minimum` option is interresting when used with `autohide_height` parameter.
+  * `strut_policy = follow_size/minimum/none` : STRUTs are used by the window manager to decide the size of maximized windows. Should the 'maximized windows' follow tint2 size (follow_size) or use the minimum size (minimum), or use the screen size (none). `minimum` option is interresting when used with `autohide_height` parameter.
 
 
 = Taskbar (pager like capability) =
