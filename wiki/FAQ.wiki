@@ -31,8 +31,8 @@ systray_sort = left2right
   * run tint2 in a terminal. if you get 'tint2 : another systray is running' it's because you have another systray/notification and you can't run more than one at a time. 
     * In gnome, remove the systray/notification with a right clic on the separator before your systray/notification -> remove
 
-= why some systray icons disappeared from the panel ? =
-  * tint2 made a stop/restart of systray protocol on some events (like switching theme with tint2conf). But some systray icon doesn't implement the stop/restart of the manager and disappeared from the panel. You can report the problem to us but also to the systray icon developper.
+= Why did some systray icons disappear from the panel? =
+  * tint2 stops/restarts the systray protocol on some events (like switching theme with tint2conf). But some systray icons do not implement the stop/restart of the manager and so disappear from the panel. You can report the problem to us and also to the systray icon developer.
 
 = I want to disable the tint2 systray =
   * To disable the systray, just put `systray = 0` in your tint2rc
@@ -44,8 +44,8 @@ systray_background_id = 0
      }}}
 
 = How to configure real transparency =
-  * tint2 autodetect composite manager and use real transparency when possible. However, xcompmgr have a little bug witch prevent tint2 to detect it. 
-  * If you want autodetect with xcompmgr, download and applied xcompmgr's patch (in bug report). See <a href="http://bugs.freedesktop.org/show_bug.cgi?id=26090">xcompmgr patch</a>
+  * tint2 autodetects your composite manager and uses real transparency when possible. However, xcompmgr have a little bug which prevents tint2 from detecting it. 
+  * If you want autodetect with xcompmgr, download and apply xcompmgr's patch (in bug report). See <a href="http://bugs.freedesktop.org/show_bug.cgi?id=26090">xcompmgr patch</a>
 
 
 = Tint2 doesn't work on compiz correctly? =
@@ -63,13 +63,13 @@ systray_background_id = 0
   * Run ccsm the compiz configuration tool. Go to Window Decorations. For both decoration and shadow windows, replace 'any' with 'any & !name=tint2'.
 
 = Task list is limited =
-  * In your tint2rc file check the value of `taskbar_mode`. if it's `multi_desktop`, tint2 show one taskbar per desktop. Change the value to `single_desktop` if you want just one taskbar.
+  * In your tint2rc file, check the value of `taskbar_mode`. If it's `multi_desktop`, tint2 show one taskbar per desktop. Change the value to `single_desktop` if you want just one taskbar.
 
 = How can I get 'pager like capability' ? =
   * In your tint2rc file, change the value of `taskbar_mode` to `multi_desktop`. This option will show one taskbar per desktop. So you can detect on witch desktop is an application and witch desktop is empty (or full). You can close an application whithout switching to the desktop. You can drag n drop application between desktop.  
 
 = I want to hide some tasks from the panel ? =
-  * In Openbox config file 'rc.xml' you can assign the propertie 'skip_taskbar' to your window
+  * In Openbox config file 'rc.xml' you can assign the property 'skip_taskbar' to your window
 
 = How to maximize window over tint2 =
   * You can manage interaction between tint2 and window with :
