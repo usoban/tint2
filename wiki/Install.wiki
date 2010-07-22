@@ -11,7 +11,7 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
 
 = Install Manually =
    == Dependencies ==
-   Tint2 depends on *cairo*, *pango*, *glib2*, *imlib2*, *xinerama*, *libXrender*, *libXcomposite*, *libXdamage*, *libx11*, *libXrandr.
+   Tint2 depends on *cairo*, *pango*, *glib2*, *>=imlib2-1.4.2*, *xinerama*, *libXrender*, *libXcomposite*, *libXdamage*, *libx11*, *>=libXrandr-1.3.
 
    On *Ubuntu*, use this command :
    {{{
