@@ -87,7 +87,7 @@ clock_padding = 4 4
 clock_background_id = 0
 clock_lclick_command = show_desktop.sh
      }}}
-The left click on the clock will do it.
+Then left click on the clock will do it.
 
 = Task list is limited =
   * In your tint2rc file, check the value of `taskbar_mode`. If it's `multi_desktop`, tint2 show one taskbar per desktop. Change the value to `single_desktop` if you want just one taskbar.
