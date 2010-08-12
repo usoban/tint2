@@ -50,9 +50,7 @@ systray_background_id = 0
 
 = Tint2 doesn't work on compiz correctly? =
   * All my tasks are on one desktop in compiz?
-    * This is a known issue in compiz. Compiz doesn't support 'Virtual desktop' specification. <br>See https://bugs.launchpad.net/ubuntu/+sour … bug/153322
-<br>or http://forum.compiz.org/viewtopic.php?f=86&t=11943
-<br>or  https://bugs.launchpad.net/ubuntu/+sour … bug/150690
+    * This is a known issue in compiz. Compiz doesn't support 'Virtual desktop' specification. <br>See [url]https://bugs.launchpad.net/ubuntu/+source/compiz/+bug/153322[/url]<br>or [url]http://forum.compiz.org/viewtopic.php?f=86&t=11943[/url]<br>or [url]https://bugs.launchpad.net/ubuntu/+source/compiz/+bug/150690[/url]
   * Tint is being decorated with a window/ has a shadow /is not fully transparent
     * Open CompizConfig Settings manager -> Window Decorations Plugin   
       * In the box for Decoration windows, put  `any & !type=dock`
