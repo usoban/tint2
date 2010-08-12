@@ -50,7 +50,9 @@ systray_background_id = 0
 
 = Tint2 doesn't work on compiz correctly? =
   * All my tasks are on one desktop in compiz?
-    * This happens because compiz has by default only one workspace with 4 view ports.To fix this, Open the Compiz Settings Manager (On Ubuntu _System -> Preferences -> Advanced Desktop Effects Settings_, and then click on _General Options -> Desktop Size tab -> adjust the number of workspaces_, increase the number of workspaces to the number of desktops you want. Tint2 will behave as expected from then.
+    * This is a known issue in compiz. Compiz doesn't support 'Virtual desktop' specification. <br>See https://bugs.launchpad.net/ubuntu/+sour … bug/153322
+<br>or http://forum.compiz.org/viewtopic.php?f=86&t=11943
+<br>or  https://bugs.launchpad.net/ubuntu/+sour … bug/150690
   * Tint is being decorated with a window/ has a shadow /is not fully transparent
     * Open CompizConfig Settings manager -> Window Decorations Plugin   
       * In the box for Decoration windows, put  `any & !type=dock`
@@ -61,6 +63,31 @@ systray_background_id = 0
 
 = I want to disable compiz shadow on Tint2 =
   * Run ccsm the compiz configuration tool. Go to Window Decorations. For both decoration and shadow windows, replace 'any' with 'any & !name=tint2'.
+
+= Adding a 'show desktop' button =
+  * tint2 doesn't implement 'show desktop' button. But here a way to get it. <br>
+Create a file with following text
+     {{{      
+#!/bin/sh
+if wmctrl -m | grep "mode: ON"; then
+exec wmctrl -k off
+else
+exec wmctrl -k on
+fi
+     }}}
+Save it in /usr/bin/show_desktop.sh and make it executable.<br>
+Install the package 'wmctrl'. And call the script in tint2rc config file.
+     {{{      
+time1_format = %H:%M
+time1_font = sans 8
+time2_format = %A %d %B
+time2_font = sans 6
+clock_font_color = #ffffff 76
+clock_padding = 4 4
+clock_background_id = 0
+clock_lclick_command = show_desktop.sh
+     }}}
+The left click on the clock will do it.
 
 = Task list is limited =
   * In your tint2rc file, check the value of `taskbar_mode`. If it's `multi_desktop`, tint2 show one taskbar per desktop. Change the value to `single_desktop` if you want just one taskbar.
