@@ -74,12 +74,12 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
       panel_size = 94% 30
       }}}    
 
-  * `panel_items = LTSBC` SVN ONLY define the items tint2 will show and the order of those items. panel_items = STC will show the Systray, the taskbar and the clock (from left to right).
-    * `L` to show Launcher
-    * `T` to show Taskbar
-    * `S` to show Systray (also called notification area)
-    * `B` to show Battery status
-    * `C` to show Clock
+  * `panel_items = LTSBC` define the items tint2 will show and the order of those items. panel_items = STC will show the Systray, the taskbar and the clock (from left to right). SVN ONLY.
+    * L to show Launcher
+    * T to show Taskbar
+    * S to show Systray (also called notification area)
+    * B to show Battery status
+    * C to show Clock
 
   * `panel_margin = horizontal_margin vertical_margin`
     * `horizontal_margin = 0` to get full monitor width
