@@ -1,4 +1,4 @@
-#summary Customizing your tint2rc (with tint2 version 0.8)
+#summary Customizing your tint2rc (with tint2 version 0.11)
 #labels Phase-Deploy
 #sidebar TOCArticles
 <wiki:toc />
