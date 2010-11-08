@@ -96,6 +96,12 @@ Then left click on the clock will do it.
 = I want to hide some tasks from the panel ? =
   * In Openbox config file 'rc.xml' you can assign the property 'skip_taskbar' to your window
 
+= The tint2 panel is blank =
+  * A new option, called  `panel_items` has been added to the config file. This option defines the items tint2 will show and the order of those items(from left to right). Please define that in your tint2rc file. The format is shown below. The options are `L` for `Launcher`, `S` for the `Systray`, `T` for the `taskbar` and `C` for the `clock`.
+    {{{
+panel_items = LTSBC 
+    }}}
+
 = How to maximize window over tint2 =
   * You can manage interaction between tint2 and window with :
     {{{      
