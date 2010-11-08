@@ -80,7 +80,7 @@ Tint2 is very easy to install. And for Ubuntu and Debian users, prebuilt binarie
 = Tint2 Pre-Built binaries =
   Please note that, for now, since tint2 is still under development, there might be a few bugs.
   
-  == For Ubuntu 9.10 (Karmic) ==
+  == For Ubuntu 9.10 and upwards ==
     Tint2 .deb files are built and can be found [https://launchpad.net/~killeroid/+archive/ppa here].
     Run this command to add the repository to your sources.list and install tint2
     {{{
