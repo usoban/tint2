@@ -125,6 +125,20 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   http://farm4.static.flickr.com/3521/3266303292_14d9b6b623.jpg
 
+  * `taskbar_name = boolean (0 or 1)` :  SVN Only enabled or disabled desktop name in taskbar
+
+  * `taskbarname_padding = left_right_padding`  SVN Only
+
+  * `taskbarname_background_id = integer` : SVN Only Which background to use
+
+  * `taskbarname_active_background_id = integer` : SVN Only Which background to use for current desktop.
+
+  * `taskbar_name_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]`  SVN Only
+
+  * `taskbar_name_font_color = color opacity (0 to 100)`  SVN Only
+
+  * `taskbar_name_active_font_color = color opacity (0 to 100)`
+
 = Task =
 
   * `urgent_nb_of_blink = integer`               : Number of blink on 'get attention' event
