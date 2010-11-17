@@ -133,15 +133,19 @@ autohide_height = 2
   * The tint binary was renamed tint2 to avoid a conflict with another package.So your new tint2 startup command is *tint2*
   * Since a new stable release hasn't been released yet, both the old tint and the new tint2 binaries will be on your system when you upgrade just incase you run into some problems and want to fall back on the old binary.
 
-= Tint2 don't show in Pekwm =
+= Tint2 doesn't show in Pekwm =
+  * The problem is that pekwm defines by default edge borders, and doesn't allow a panel to get inside these edge borders. The config option is in `~/.pekwm/config` under {{{Screen/EdgeSize}}}. You can either disable the edge borders or set tint2 to a size where it doesn't enter these borders (i.e. play with `panel_size` and `panel_margin`)
   * Setting the margin to one pixel made it appear on my screen. With horizontal panel:
     {{{      
+panel_size = 95% height
 panel_margin = 0 1
      }}}
   * With vertical panel:
     {{{      
+panel_size = width 95%
 panel_margin = 1 0
      }}}
 
 = Is there an IRC channel? =
   * Yes. There is now an irc channel, *#tint2* on [irc://irc.freenode.net irc.freenode.net].
+  * Just ask your question and stay there, because we are not always watching the channel ;)
