@@ -127,11 +127,11 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `taskbar_name = boolean (0 or 1)` :  SVN Only enabled or disabled desktop name in taskbar
 
-  * `taskbarname_padding = left_right_padding`  SVN Only
+  * `taskbar_name_padding = left_right_padding`  SVN Only
 
-  * `taskbarname_background_id = integer` : SVN Only Which background to use
+  * `taskbar_name_background_id = integer` : SVN Only Which background to use
 
-  * `taskbarname_active_background_id = integer` : SVN Only Which background to use for current desktop.
+  * `taskbar_name_active_background_id = integer` : SVN Only Which background to use for current desktop.
 
   * `taskbar_name_font = [FAMILY-LIST] [STYLE-OPTIONS] [SIZE]`  SVN Only
 
