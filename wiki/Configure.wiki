@@ -125,7 +125,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   http://farm4.static.flickr.com/3521/3266303292_14d9b6b623.jpg
 
-  * `taskbar_name = boolean (0 or 1)` :  SVN Only enabled or disabled desktop name in taskbar
+  * `taskbar_name = boolean (0 or 1)` :  SVN Only enabled(=1) or disabled(=0) desktop name in taskbar
 
   * `taskbar_name_padding = left_right_padding`  SVN Only
 
@@ -174,7 +174,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
 = System Tray ==
 
-  * `systray = boolean (0 or 1)` : enabled or disabled systray
+  * `systray = boolean (0 or 1)` : enabled(=1) or disabled(=0) systray
 
   * `systray_padding = horizontal_left_right_padding vertical_padding horizontal_spacing` 
 
@@ -219,7 +219,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
 = Tooltip =
 
-  * `tooltip = boolean (0 or 1)`               : enabled or disabled tooltip on task
+  * `tooltip = boolean (0 or 1)`               : enabled(=1) or disabled(=0) tooltip on task
 
   * `tooltip_padding = horizontal_padding vertical_padding`
 
@@ -235,7 +235,7 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
 = Battery =
 
-  * `battery = boolean (0 or 1)`               : enabled or disabled battery applet
+  * `battery = boolean (0 or 1)`               : enabled(=1) or disabled(=0) battery applet
 
   * `battery_hide = never or an integer (0 to 100)`: At what battery percent does the battery hide
 
