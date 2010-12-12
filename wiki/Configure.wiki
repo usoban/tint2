@@ -170,7 +170,10 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
 
   * `task_STATUS_background_id = integer` : Which background to use when task is selected
 
+  * `task_tooltip = boolean (0 or 1)`               : enabled(=1) or disabled(=0) tooltip on task
+
   http://farm4.static.flickr.com/3086/3265475337_262799ded3.jpg
+
 
 = System Tray ==
 
@@ -218,8 +221,6 @@ Configuration marked as `SVN ONLY` are not yet supported and could change in the
   * `clock_rclick_command = text` : Which command to execute on right click
 
 = Tooltip =
-
-  * `tooltip = boolean (0 or 1)`               : enabled(=1) or disabled(=0) tooltip on task
 
   * `tooltip_padding = horizontal_padding vertical_padding`
 
