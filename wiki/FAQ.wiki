@@ -34,6 +34,9 @@ systray_sort = left2right
 = Why did some systray icons disappear from the panel? =
   * tint2 stops/restarts the systray protocol on some events (like switching theme with tint2conf). But some systray icons do not implement the stop/restart of the manager and so disappear from the panel. You can report the problem to us and also to the systray icon developer.
 
+= Why don't some systray icons appear when you run tint2 in a KDE session? =
+  * Some KDE applications use the KDE status notifier service to show system tray icons. If you disable this service (systemsettings -> Startup and Shutdown -> Service Manager -> uncheck "Status Notifier Manager") all the icons should appear normally in tint2.
+
 = I want to disable the tint2 systray =
   * To disable the systray, just put `systray = 0` in your tint2rc
   * Example:
