@@ -33,6 +33,9 @@
 #include "panel.h"
 #include "tooltip.h"
 
+//#ifdef ENABLE_BATTERY
+#include "battery.h"
+//#endif
 
 int signal_pending;
 // --------------------------------------------------
@@ -174,7 +177,7 @@ void init_panel()
 		init_panel_size_and_position(p);
 		// add childs according to panel_items
 		for (k=0 ; k < strlen(panel_items_order) ; k++) {
-			if (panel_items_order[k] == 'L') 
+			if (panel_items_order[k] == 'L')
 				init_launcher_panel(p);
 			if (panel_items_order[k] == 'T')
 				init_taskbar_panel(p);
@@ -219,7 +222,7 @@ void init_panel()
 
 		if (panel_autohide)
 			add_timeout(panel_autohide_hide_timeout, 0, autohide_hide, p);
-		
+
 		visible_taskbar(p);
 	}
 
@@ -309,7 +312,7 @@ void init_panel_size_and_position(Panel *panel)
 int resize_panel(void *obj)
 {
 	resize_by_layout(obj, 0);
-	
+
 	//printf("resize_panel\n");
 	if (panel_mode != MULTI_DESKTOP && taskbar_enabled) {
 		// propagate width/height on hidden taskbar
@@ -385,21 +388,21 @@ void update_strut(Panel* p)
 void set_panel_items_order(Panel *p)
 {
 	int k, j;
-	
+
 	if (p->area.list) {
 		g_slist_free(p->area.list);
 		p->area.list = 0;
 	}
 
 	for (k=0 ; k < strlen(panel_items_order) ; k++) {
-		if (panel_items_order[k] == 'L') 
+		if (panel_items_order[k] == 'L')
 			p->area.list = g_slist_append(p->area.list, &p->launcher);
 		if (panel_items_order[k] == 'T') {
 			for (j=0 ; j < p->nb_desktop ; j++)
 				p->area.list = g_slist_append(p->area.list, &p->taskbar[j]);
 		}
 #ifdef ENABLE_BATTERY
-		if (panel_items_order[k] == 'B') 
+		if (panel_items_order[k] == 'B')
 			p->area.list = g_slist_append(p->area.list, &p->battery);
 #endif
 		if (panel_items_order[k] == 'S' && p == panel1) {
@@ -534,7 +537,7 @@ void set_panel_background(Panel *p)
 		a = l0->data;
 		set_redraw(a);
 	}
-	
+
 	// reset task/taskbar 'state_pix'
 	int i, k;
 	Taskbar *tskbar;
@@ -628,7 +631,7 @@ Task *click_task (Panel *panel, int x, int y)
 Launcher *click_launcher (Panel *panel, int x, int y)
 {
 	Launcher *launcher = &panel->launcher;
-	
+
 	if (panel_horizontal) {
 		if (launcher->area.on_screen && x >= launcher->area.posx && x <= (launcher->area.posx + launcher->area.width))
 			return launcher;
@@ -689,6 +692,17 @@ int click_clock(Panel *panel, int x, int y)
 	return FALSE;
 }
 
+int click_battery(Panel *panel, int x, int y)
+{
+    Battery btry = panel->battery;
+    if (panel_horizontal) {
+        if (btry.area.on_screen && x >= btry.area.posx && x <= (btry.area.posx + btry.area.width)) {
+            return TRUE;
+        }
+    }
+
+    return FALSE;
+}
 
 Area* click_area(Panel *panel, int x, int y)
 {

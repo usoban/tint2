@@ -60,6 +60,8 @@ char *path_energy_now;
 char *path_energy_full;
 char *path_current_now;
 char *path_status;
+char *battery_lclick_command;
+char *battery_rclick_command;
 
 #if defined(__OpenBSD__) || defined(__NetBSD__)
 int apm_fd;
@@ -70,7 +72,7 @@ void update_batterys(void* arg)
 	int old_percentage = battery_state.percentage;
 	int16_t old_hours = battery_state.time.hours;
 	int8_t old_minutes = battery_state.time.minutes;
-	
+
 	update_battery();
 	if (old_percentage == battery_state.percentage && old_hours == battery_state.time.hours && old_minutes == battery_state.time.minutes)
 		return;
@@ -112,6 +114,8 @@ void default_battery()
 	battery_state.percentage = 0;
 	battery_state.time.hours = 0;
 	battery_state.time.minutes = 0;
+	battery_lclick_command = 0;
+	battery_rclick_command = 0;
 #if defined(__OpenBSD__) || defined(__NetBSD__)
 	apm_fd = -1;
 #endif
@@ -127,6 +131,8 @@ void cleanup_battery()
 	if (path_status) g_free(path_status);
 	if (battery_low_cmd) g_free(battery_low_cmd);
 	if (battery_timeout) stop_timeout(battery_timeout);
+	if (battery_lclick_command) g_free(battery_lclick_command);
+	if (battery_rclick_command) g_free(battery_rclick_command);
 
 #if defined(__OpenBSD__) || defined(__NetBSD__)
 	if ((apm_fd != -1) && (close(apm_fd) == -1))
@@ -447,7 +453,7 @@ int resize_battery(void *obj)
 	int ret = 0;
 
 	battery->area.redraw = 1;
-	
+
 	snprintf(buf_bat_percentage, sizeof(buf_bat_percentage), "%d%%", battery_state.percentage);
 	if(battery_state.state == BATTERY_FULL) {
 		strcpy(buf_bat_time, "Full");
@@ -480,3 +486,16 @@ int resize_battery(void *obj)
 	return ret;
 }
 
+void battery_action(int button)
+{
+	char *command = 0;
+	switch (button) {
+		case 1:
+		command = battery_lclick_command;
+		break;
+		case 3:
+		command = battery_rclick_command;
+		break;
+	}
+	tint_exec(command);
+}

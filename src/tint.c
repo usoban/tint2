@@ -214,7 +214,7 @@ void init_X11()
 	setlocale (LC_ALL, "");
 	// config file use '.' as decimal separator
 	setlocale(LC_NUMERIC, "POSIX");
-	
+
 	// load default icon
 	gchar *path;
 	const gchar * const *data_dirs;
@@ -372,12 +372,21 @@ int tint2_handles_click(Panel* panel, XButtonEvent* e)
 	Taskbar *tskbar = click_taskbar(panel, e->x, e->y);
 	if (tskbar && e->button == 1 && panel_mode == MULTI_DESKTOP)
 		return 1;
+
 	if (click_clock(panel, e->x, e->y)) {
 		if ( (e->button == 1 && clock_lclick_command) || (e->button == 3 && clock_rclick_command) )
 			return 1;
 		else
 			return 0;
 	}
+
+    if (click_battery(panel, e->x, e->y)) {
+        if ( (e->button == 1 && battery_lclick_command) || (e->button == 3 && battery_rclick_command) )
+            return 1;
+        else
+            return 0;
+    }
+
 	return 0;
 }
 
@@ -521,6 +530,10 @@ void event_button_release (XEvent *e)
 		task_drag = 0;
 		return;
 	}
+
+    if ( click_battery(panel, e->xbutton.x, e->xbutton.y)) {
+        battery_action(e->xbutton.button);
+    }
 
 	Taskbar *tskbar;
 	if ( !(tskbar = click_taskbar(panel, e->xbutton.x, e->xbutton.y)) ) {

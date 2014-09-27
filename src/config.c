@@ -127,7 +127,7 @@ int config_get_monitor(char* monitor)
 			// monitor specified by name, not by index
 			int i, j;
 			for (i=0; i<server.nb_monitor; ++i) {
-				if (server.monitor[i].names == 0) 
+				if (server.monitor[i].names == 0)
 					// xrandr can't identify monitors
 					continue;
 				j = 0;
@@ -341,7 +341,7 @@ void add_entry (char *key, char *value)
 				g_free( panel_items_order );
 				panel_items_order = tmp;
 			}
-			else 
+			else
 				panel_items_order = g_strdup("C");
 		}
 		if (strlen(value) > 0) {
@@ -399,6 +399,14 @@ void add_entry (char *key, char *value)
 	else if (strcmp(key, "clock_rclick_command") == 0) {
 		if (strlen(value) > 0)
 			clock_rclick_command = strdup(value);
+	}
+	else if (strcmp(key, "battery_lclick_command") == 0) {
+        if (strlen(value) > 0)
+            battery_lclick_command = strdup(value);
+	}
+    else if (strcmp(key, "battery_rclick_command") == 0) {
+        if (strlen(value) > 0)
+            battery_rclick_command = strdup(value);
 	}
 
 	/* Taskbar */
@@ -761,7 +769,7 @@ int config_read_file (const char *path)
 		}
 	}
 	fclose (fp);
-	
+
 	// append Taskbar item
 	if (new_config_file == 0) {
 		taskbar_enabled = 1;
@@ -770,7 +778,7 @@ int config_read_file (const char *path)
 			g_free(panel_items_order);
 			panel_items_order = tmp;
 		}
-		else 
+		else
 			panel_items_order = g_strdup("T");
 	}
 
